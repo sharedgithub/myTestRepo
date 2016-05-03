@@ -1,0 +1,19 @@
+
+3 May 2016
+
+DONE	Submitting Tahirs Docs
+TBD	Getting Drawer Key
+TBD	Giving Abhijeet Drawer Key
+TBD	Appium Introductory Slide Presentation
+TBD	Installation of Selenium Starter Kit
+TBD	JIRA KT from Manoj
+TBD	GIT KT to Shashank
+TBD	Get LWP Approved 
+TBD	Preparing scripts in selenium starter kit
+TBD	Checking emails
+TBD	Cleaning emails
+TBD	Understanding Influence health flow
+TBD 	B1 Visa Process
+TBD	Preparing Queries COD
+
+US Contact person
