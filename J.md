@@ -1,8 +1,10 @@
 # chapter 1
-*class is a template that describes what kind of state and behaviour its objects can be
 
-*state->instance variables
-behaviour->methods
+* class is a template that describes what kind of state and behaviour its objects can be
+
+* state->instance variables
+
+* behaviour->methods
 
 * there are two type of variables in java 
 
@@ -12,11 +14,10 @@ behaviour->methods
 
 
 # inheritance
-*inheritance is for code reuse
 
-*interfaces are 100 percent abstact superclass
+* inheritance is for code reuse
 
-*identifiers can only start with a letter, $ and _ characters after that it can have any number of characters without space
+* identifiers can only start with a letter, $ and _ characters after that it can have any number of characters without space
 int _a; int $b  are legal
 
 
@@ -35,6 +36,8 @@ int _a; int $b  are legal
 *Default access is package level access. Classes can be accessed only by the classes of same package
 
 *______Non Access Modifiers-> final abstract strictfp
+
+* classes can be final or abstract but not both. final classes cannot be subclassed and abstract class cannot be instantiated
 
 * Final argument( as in parameter of a method) of a method cannot be modified. 
 
@@ -56,13 +59,20 @@ public abstract class Animal{
 * the first concrete subclass has to implement all the declared abstract method of the super class.
 
 # Interfaces
+
+* interfaces are 100 percent abstact superclass
+
 * interfaces are contract for a class...if a class implements an interface or multiple interfaces then it has to implement all the methods interfaces contains
 
 * interfaces contains only abstract methods which are implicitly public and abstract. and are not static and final and private
 
 * interfaces contains only constants: Public static final
 
-* interfaces can only extent one or more than one interfaces. cannot extent class
+* interfaces can only extend one or more than one interfaces. cannot extend class
+
+* classes can implement multiple interfaces
+
+* abstract class can implement interface but they dont have to impl
 
 * interfaces are implicitly abstract
 
@@ -84,9 +94,11 @@ public class jadu implements honagaki{
 
 * so within interface few things are not mandate to say like if i declare a method  void abc(); then this is legall as it is public and abstract implcitily so no need to say implicit things like if i define a variable int i; then we know it is constant implicity ie public static and final. also the order in which we specify these keyworrd are kind of less important i mean if write public static final is equivalent to public final static
 
+# multiple parameter methods
+
 * methods can also take multiple parameter
 
-  public void jaihanuman(int a, String... abc) this means that the var-arg short for variable argument can take multiple string parameters). Also note that var-args should always be the last parameter
+ 8 public void jaihanuman(int a, String... abc) this means that the var-arg short for variable argument can take multiple string parameters). Also note that var-args should always be the last parameter
   
 # Constructors
 
