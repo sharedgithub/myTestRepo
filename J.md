@@ -4,6 +4,12 @@
 *state->instance variables
 behaviour->methods
 
+* there are two type of variables in java 
+
+1) Primitive(char boolean byte short int long double float)
+
+2) Refrence variables( not instance variable which are defined outside the methods but inside the class)( and not local varables which are defined in methods)
+
 
 # inheritance
 *inheritance is for code reuse
@@ -16,21 +22,27 @@ int _a; int $b  are legal
 
 # Modifiers-> Access and Non Access Modifiers
 
-*Access Modifiers-> Public Protected Private Default. Classes can use public and default. 
+*_____Access Modifiers-> Public Protected Private Default. 
 
-* Methods can use all the four. Protected methods can be accesed by subclasses. Final method can not be overridden.
+* Classes can only use public and default. 
 
-* Final argument of a method cannot be modified
-
-*Non Access Modifiers-> final abstract strictfp
-
-*Default access is package level access. Classes can be accessed only by the classes of same package
+* Methods can use all the four. Protected methods can be accesed by subclasses. 
 
 * to local variables only one non access modifiers can be applied which is final
 
 * Public classes can be accessed from any where
 
+*Default access is package level access. Classes can be accessed only by the classes of same package
+
+*______Non Access Modifiers-> final abstract strictfp
+
+* Final argument( as in parameter of a method) of a method cannot be modified. 
+
+*Final method can not be overridden.
+
 * you make a class final when you dont want it to be subclassed for its methods to be overridden. 
+
+*______Abstract classes
 
 * abstract classes can not be instantiated they are only to be extended for its method to be overridden. abstract classes contains both abstact methods and non abstract methods. But a non abstract class can never have a abstract method. The concept of abstract class is to implement or declare generic methods. 
 
@@ -39,7 +51,7 @@ public abstract class Animal{
   public abstract void color(); // abstract methods ends with semi colon
   
 }
-* since the static things are class level things and member functions and instance variable are object level. Abstract can not be used with static. Also abstract can not be final and private since subclass wont be able to override them to implement the methods.
+* since the static things are class level things and member functions and instance variable are object level. Abstract can not be used with static. Also abstract method can not be final and private since subclass wont be able to override them to implement the methods.
 
 * the first concrete subclass has to implement all the declared abstract method of the super class.
 
@@ -70,7 +82,39 @@ public class jadu implements honagaki{
 
 }
 
-* so within interface few things are not mandate to say like if i declare a method  void abc(); then this is legall as it is public and abstract implcitily so no need to say implicit things like if i define a variable int i; then we know it is constant implicity ie public static and final. also the order in which we specify these keyworrd are kind of less important i mean if write public 
+* so within interface few things are not mandate to say like if i declare a method  void abc(); then this is legall as it is public and abstract implcitily so no need to say implicit things like if i define a variable int i; then we know it is constant implicity ie public static and final. also the order in which we specify these keyworrd are kind of less important i mean if write public static final is equivalent to public final static
+
+* methods can also take multiple parameter
+
+  public void jaihanuman(int a, String... abc) this means that the var-arg short for variable argument can take multiple string parameters). Also note that var-args should always be the last parameter
+  
+# Constructors
+
+* can not have return type
+* can
+
+# Enum 
+
+* it is a list of constants of type enum
+
+* enum can be declared outside or inside a class but not in methods
+
+* enum can contain constructors, method, variables and constants 
+
+
+# static
+
+* static methods do not have access to non static memebers.
+
+* there is only one copy of static things which all the members shares
+
+# Array 
+
+* array can contain primitives or objects but array itself is an object
+
+* int [5] abc is not legal we can declare as int abc[] but int [] abc is prefered
+
+
 
 
 
