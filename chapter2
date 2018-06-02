@@ -1,0 +1,15 @@
+Encapsulation-> hiding implementation behind public programming interface
+
+Inheritance is for 1) code reuse 2) polymorphism
+
+class A{ }
+
+Class C{}
+
+class B extend A{ private C animal; }
+
+B extends A => B IS-A A B HAS-A C
+
+Every class in java is subclass of object class
+
+class cant extend more than one class( Deadly diamond of Dead)
