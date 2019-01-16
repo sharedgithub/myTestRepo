@@ -39,6 +39,9 @@ public class Animala {
 		this.name = name;
 	}
 
+	public void eat() {
+		System.out.println("animal eating");
+	}
 	
 	@Override
 	public String toString() {

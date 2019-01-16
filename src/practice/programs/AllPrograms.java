@@ -3,6 +3,7 @@ package practice.programs;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -110,6 +111,16 @@ public class AllPrograms {
 		System.out.println(a.reverse());
 		a.reverse();
 		
+	}
+	
+	void usingScannerClass() {
+		Scanner scan=new Scanner(System.in);
+		int a=scan.nextInt();
+		double b=scan.nextDouble();
+		System.out.println("enter the line");
+		scan.nextLine();
+		String c=scan.nextLine();
+		 String[] arItems = scan.nextLine().split(" ");
 	}
 
 }

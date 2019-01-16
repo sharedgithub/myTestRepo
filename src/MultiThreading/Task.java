@@ -1,8 +1,10 @@
 package MultiThreading;
-public class Task implements Runnable{
+public class Task implements Runnable{ // task is nothing but runnable 
+//	public class Task extends Thread{ // this is the second way of creation of thread
+	Integer x=0;
 
 	@Override
-	public void run() {
+	public void run() {  // and runnable has only one method run ..which has to be overridden
 		doSomething();
 		doMore();
 		System.out.println("task is running");
@@ -13,9 +15,12 @@ public class Task implements Runnable{
 		
 	}
 
-	private void doSomething() {
-		System.out.println("doing something");
+	private synchronized void doSomething() {
 		
+		for(int i=0; i<=1000; i++) {
+				x=x+1;
+		}
+		System.out.println(Thread.currentThread().getName() + " X: " + x);
 	}
 	
 }

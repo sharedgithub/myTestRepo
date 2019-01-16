@@ -109,6 +109,8 @@ public class TestArrays {//implements Comparable<TestArrays> {
 		String str = Arrays.toString(strArray);
 		print(str);
 
+		char[] a=str.toCharArray();
+		
 		// String sorting tak toh theek hai objects ka kya
 
 		TestArrays[] ta = new TestArrays[3];

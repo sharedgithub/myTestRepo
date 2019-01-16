@@ -65,7 +65,6 @@ public class TestDir {
 		
 	}
 	
-	
 	public static void copy(File sourceLocation, File targetLocation) throws IOException {
 	    if (sourceLocation.isDirectory()) {
 	        copyDirectory(sourceLocation, targetLocation);
