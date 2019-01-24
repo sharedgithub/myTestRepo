@@ -76,4 +76,3 @@ Request Header, which carries metadata (as key-value pairs) for the HTTP Request
 Request Body, which indicates the message content or resource representation.
 
 
-
