@@ -24,39 +24,39 @@ can be easily integrated with gui tests
 ### what to validate
 During the API testing process, a request is raised to the API with the known data. This way you can analyze the validation response. While testing an API, you should consider:
 
-Accuracy of data
-Schema validation
-HTTP status codes
-Data type, validations, order and completeness
-Authorization checks
-Implementation of response timeout
-Error codes in case API returns, and
-Non-functional testing like performance and security testing
+* Accuracy of data
+* Schema validation
+* HTTP status codes
+* Data type, validations, order and completeness
+* Authorization checks
+* Implementation of response timeout
+* Error codes in case API returns, and
+* Non-functional testing like performance and security testing
 
 ### What is validated
 
-Unit testing and Functional testing
-Load testing to test the performance under load
-Discovery testing to list, create and delete the number of calls documented in API
-Usability and Reliability testing to get consistent results
-Security and Penetration testing to validate all types of authentication
-Automation testing to create and run scripts that require regular API calls
-End to end Integration and Web UI testing
-API documentation testing to determine its efficiency and effectiveness
+* Unit testing and Functional testing
+* Load testing to test the performance under load
+* Discovery testing to list, create and delete the number of calls documented in API
+* Usability and Reliability testing to get consistent results
+* Security and Penetration testing to validate all types of authentication
+* Automation testing to create and run scripts that require regular API calls
+* End to end Integration and Web UI testing
+* API documentation testing to determine its efficiency and effectiveness
 
 ### types of issues
 
-Missing or duplicate functionality
-Fails to handle error conditions gracefully
-Stress
-Reliability
-Security
-Unused flags
-Not implemented errors
-Inconsistent error handling
-Performance
-Multi-threading issues
-Improper errors
+* Missing or duplicate functionality
+* Fails to handle error conditions gracefully
+* Stress
+* Reliability
+* Security
+* Unused flags
+* Not implemented errors
+* Inconsistent error handling
+* Performance
+* Multi-threading issues
+* Improper errors
 
 Mostly, there are two kinds of Web Services which should be remembered in your next API testing interview:
 
