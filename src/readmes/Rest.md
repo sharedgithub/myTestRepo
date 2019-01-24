@@ -1,4 +1,3 @@
-https://www.katalon.com/resources-center/blog/web-api-testing-interview-questions/
 
 Application programming interface is like a bridge between two softwares ..to help them communicate with each other
  A software system implementing an API contains functions or subroutines that can be executed by another software system.
@@ -112,3 +111,6 @@ A URI’s format is <protocol>://<service-name>/<ResourceType>/<ResourceID>.
 * REST permits many different data formats whereas SOAP only permits XML.
 * REST allows better support for browser clients due to its support for JSON.
 * REST has better performance and scalability. REST reads can be cached, SOAP based reads cannot be cached.
+
+
+[https://www.katalon.com/resources-center/blog/web-api-testing-interview-questions/]
