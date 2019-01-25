@@ -118,4 +118,12 @@ while(i.hasNext()){
 
 
 
+Comparable and Comparator both are interfaces and can be used to sort collection elements
+
+	Comparable provides a single sorting sequence while comparator can use multiple. That means comparator can use multiple field for sorting like name and id. Comparator modifies actual class and comparable does not
 	
+we can also use Array.sort() and Collections.sort()
+
+
+ java.util.Collections is a utility class consists exclusively of static methods that operate on or return collections
+ binary search, sorting, shuffling, reverse etc.
