@@ -1,6 +1,15 @@
 # Collection
 
-Collection interface extends Iterable interface
+
+Collections are like containers that groups multiple items in a single unit
+
+Collections Framework is architecture to represent and manipulate Collections in java in a standard way
+
+Collection interface extends Iterable interface. 
+
+java.util.Collection is the root interface of Collections Framework
+
+It contains some important methods such as size(), iterator(), add(), remove(), clear() that every Collection class must implement. Some other important interfaces are java.util.List, java.util.Set, java.util.Queue and java.util.Map. Map is the only interface that doesn’t inherits from Collection interface but it’s part of Collections framework.
 
 Any class to implement for each loop need to extend iterable
 
@@ -23,6 +32,36 @@ Bulk Operation
 Array Operation
 	toArray();
 
+
+Set Interface: 
+
+* cannot contain duplicate elements
+* does not allow random access
+* HashSet, TreeSet, LinkedHashSet
+
+Java HashSet is the basic implementation the Set interface that is backed by a HashMap. It makes no guarantees for iteration order of the set and permits the null element.
+
+This class offers constant time performance for basic operations (add, remove, contains and size), assuming the hash function disperses the elements properly among the buckets. We can set the initial capacity and load factor for this collection. The load factor is a measure of how full the hash map is allowed to get before its capacity is automatically increased.
+
+List Interface
+
+* ordered collection and can contain duplicate elements
+* resizable array
+* ArrayList, LinkedList
+
+Queue Interface
+
+Dequeue Interface
+*  linear collection that supports element insertion and removal at both ends. 
+
+Java Map is an object that maps keys to values. A map cannot contain duplicate keys: Each key can map to at most one value.
+HashMap, TreeMap, and LinkedHashMap.
+
+SortedSet is a Set that maintains its elements in ascending order.
+
+SortedMap: Map that maintains its mappings in ascending key order.
+
+Java ArrayList is the resizable-array implementation of the List interface. Implements all optional list operations, and permits all elements, including null. In addition to implementing the List interface, this class provides methods to manipulate the size of the array that is used internally to store the list. (This class is roughly equivalent to Vector, except that it is unsynchronized.)
 
 
 ### List Interface
