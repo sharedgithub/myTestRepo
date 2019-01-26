@@ -1,38 +1,34 @@
 # Collection
 
 
-Collections are like containers that groups multiple items in a single unit
+* Collections are like containers that groups multiple items in a single unit
+* Collections Framework is architecture to represent and manipulate Collections in java in a standard way
+* Collection interface extends Iterable interface. Any class to implement for each loop need to extend iterable interface. Iterable has only one method which is iterator()
+* java.util.Collection is the root interface of Collections Framework
+* It contains some important methods such as size(), iterator(), add(), remove(), clear() that every Collection class must implement. Some other important interfaces are java.util.List, java.util.Set, java.util.Queue and java.util.Map. Map is the only interface that doesn’t inherits from Collection interface but it’s part of Collections framework.
 
-Collections Framework is architecture to represent and manipulate Collections in java in a standard way
+![](http://apprize.info/javascript/oca_2/oca_2.files/image1184.jpg)
 
-Collection interface extends Iterable interface. 
-
-java.util.Collection is the root interface of Collections Framework
-
-It contains some important methods such as size(), iterator(), add(), remove(), clear() that every Collection class must implement. Some other important interfaces are java.util.List, java.util.Set, java.util.Queue and java.util.Map. Map is the only interface that doesn’t inherits from Collection interface but it’s part of Collections framework.
-
-Any class to implement for each loop need to extend iterable
-
-Collecton interface has common methods 
+### Collecton interface has common methods 
 
 Basic Operation
-	add(Object)
-	remove(Object)
-	contains(Object)
-	size();
-	isEmpty();
+* add(Object)
+* remove(Object)
+* contains(Object)
+* size();
+* isEmpty();
 
 Bulk Operation
-	addAll(Collection)
-	removeAll(Collection)
-	retainAll(Collection)
-	containsAll(Collection)
-	clear();
+* addAll(Collection)
+* removeAll(Collection)
+* retainAll(Collection)
+* containsAll(Collection)
+* clear();
 
 Array Operation
-	toArray();
+* toArray();
 
-
+# Types
 Set Interface: 
 
 * cannot contain duplicate elements
