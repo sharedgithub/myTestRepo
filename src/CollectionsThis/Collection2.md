@@ -69,13 +69,21 @@ List Interface
 3) An ArrayList class can act as a list only because it implements List only.	LinkedList class can act as a list and queue both because it implements List and Deque interfaces.
 4) ArrayList is better for storing and accessing data.	LinkedList is better for manipulating data.
 
-Queue Interface
+Queue Interface 
+
+orders the element in FIFO(First In First Out) manner
 
 Dequeue Interface
-*  linear collection that supports element insertion and removal at both ends. 
+*  collection that supports element insertion and removal at both ends. 
 
 Java Map is an object that maps keys to values. A map cannot contain duplicate keys: Each key can map to at most one value.
 HashMap, TreeMap, and LinkedHashMap.
+
+1) HashMap is non synchronized. It is not-thread safe and can't be shared between many threads without proper synchronization code.	Hashtable is synchronized. It is thread-safe and can be shared with many threads.
+2) HashMap allows one null key and multiple null values.	Hashtable doesn't allow any null key or value.
+3) HashMap is a new class introduced in JDK 1.2.	Hashtable is a legacy class.
+4) HashMap is fast.	Hashtable is slow.
+
 
 SortedSet is a Set that maintains its elements in ascending order.
 
@@ -83,6 +91,33 @@ SortedMap: Map that maintains its mappings in ascending key order.
 
 Java ArrayList is the resizable-array implementation of the List interface. Implements all optional list operations, and permits all elements, including null. In addition to implementing the List interface, this class provides methods to manipulate the size of the array that is used internally to store the list. (This class is roughly equivalent to Vector, except that it is unsynchronized.)
 
+### Key Attributes of Common Collection Classes (OCP Objectives 4.5 and 4.6)
+
+* ArrayList Fast iteration and fast random access.
+
+* Vector It’s like a slower ArrayList, but it has synchronized methods.
+
+* LinkedList Good for adding elements to the ends, i.e., stacks and queues.
+
+* HashSet Fast access, assures no duplicates, provides no ordering.
+
+* LinkedHashSet No duplicates; iterates by insertion order.
+
+* image TreeSet No duplicates; iterates in sorted order.
+
+* HashMap Fastest updates (key/values); allows one null key, many null values.
+
+* Hashtable Like a slower HashMap (as with Vector, due to its synchronized methods). No null values or null keys allowed.
+
+* LinkedHashMap Faster iterations; iterates by insertion order or last accessed; allows one null key, many null values.
+
+* TreeMap A sorted map.
+
+* PriorityQueue A to-do list ordered by the elements’ priority.
+
+![](http://apprize.info/javascript/oca_2/oca_2.files/image1256.jpg)
+
+![](http://apprize.info/javascript/oca_2/oca_2.files/image1257.jpg)
 
 ### List Interface
 	List is used when sequence or position matters. It is basically a resizable array
@@ -147,3 +182,5 @@ we can also use Array.sort() and Collections.sort()
 
  java.util.Collections is a utility class consists exclusively of static methods that operate on or return collections
  binary search, sorting, shuffling, reverse etc.
+ 
+ 
