@@ -9,6 +9,23 @@
 
 ![](http://apprize.info/javascript/oca_2/oca_2.files/image1184.jpg)
 
+collections can hold Objects but not primitives.hence we use wrapper class.
+
+subflavours of collections : sorted unsorted ordered unorderd
+
+some collections use hashing to store and retrieve data all those collections starts with "Hash"
+
+Autoboxing is the automatic conversion that the Java compiler makes between the primitive types and their corresponding object wrapper classes.
+
+Some of the common methods in objects class java.lang.Object
+
+![](http://apprize.info/javascript/oca_2/oca_2.files/image1165.jpg)
+
+The bottom line is this: If you want objects of your class to be used as keys for a hashtable (or as elements in any data structure that uses equivalency for searching for—and/or retrieving—an object), then you must override equals() so that two different instances can be considered the same
+"If two objects are equal using Object class equals method, then the hashcode method should give the same value for these two objects.". Hence it is required to override hashcode methods along with the equals method.
+
+Basically if you have your own data type and you want to use collections over it then do the above
+
 ### Collecton interface has common methods 
 
 Basic Operation
@@ -33,9 +50,11 @@ Set Interface:
 
 * cannot contain duplicate elements
 * does not allow random access
-* HashSet, TreeSet, LinkedHashSet
 
-Java HashSet is the basic implementation the Set interface that is backed by a HashMap. It makes no guarantees for iteration order of the set and permits the null element.
+* HashSet(The HashSet class implements the Set interface, backed by a hash table which is actually a HashMap instance) (no iteration order)(null allowed)
+* TreeSet(maintain sorting)(null not allowed)(fast random access)
+* LinkedHashSet(maintain insertion order)(null allowed)
+
 
 This class offers constant time performance for basic operations (add, remove, contains and size), assuming the hash function disperses the elements properly among the buckets. We can set the initial capacity and load factor for this collection. The load factor is a measure of how full the hash map is allowed to get before its capacity is automatically increased.
 
@@ -44,6 +63,11 @@ List Interface
 * ordered collection and can contain duplicate elements
 * resizable array
 * ArrayList, LinkedList
+
+1) ArrayList internally uses a dynamic array to store the elements.	LinkedList internally uses a doubly linked list to store the elements.
+2) Manipulation with ArrayList is slow because it internally uses an array. If any element is removed from the array, all the bits are shifted in memory.	Manipulation with LinkedList is faster than ArrayList because it uses a doubly linked list, so no bit shifting is required in memory.
+3) An ArrayList class can act as a list only because it implements List only.	LinkedList class can act as a list and queue both because it implements List and Deque interfaces.
+4) ArrayList is better for storing and accessing data.	LinkedList is better for manipulating data.
 
 Queue Interface
 
