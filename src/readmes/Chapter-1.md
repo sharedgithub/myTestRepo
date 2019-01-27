@@ -71,6 +71,11 @@ float)			0.0f
 * interfaces are implicitly abstract
 * so within interface few things are not mandate to say like if i declare a method  void abc(); then this is legall as it is public and abstract implcitily so no need to say implicit things like if i define a variable int i; then we know it is constant implicity ie public static and final. also the order in which we specify these keyworrd are kind of less important i mean if write public static final is equivalent to public final static
 
+For Interface:
+Interface is used when you don't know anything about implementation but know the contract that implementer should have to accomplish the task.
+For Abstract class:
+Abstract class is used when you know partial implementation, where say out of 5 methods, you know implementation of 3 methods and don't know implemenatation of 2 methods in that case 2 methods will be abstract and you need to rely on implementer as a contract to must provide body of abstract methods to accomplish the task.
+
 	public interface honagaki{
 	
 	  public abstract void runTo();
@@ -116,7 +121,7 @@ public enum myEnum{
 
 * A static method cant access not static (instance) members(varible and methods) as there no instance
 
-* A non static method cant access static method
+* A non static method can access static method
 
 *
 

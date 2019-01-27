@@ -24,6 +24,7 @@ public class Teacher {
    private List<Student> students;
    // getter and setter methods 
 }
+
 public class Student {
    private String name;
    private List<Teacher> teachers;

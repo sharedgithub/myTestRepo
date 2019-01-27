@@ -69,6 +69,10 @@ List Interface
 3) An ArrayList class can act as a list only because it implements List only.	LinkedList class can act as a list and queue both because it implements List and Deque interfaces.
 4) ArrayList is better for storing and accessing data.	LinkedList is better for manipulating data.
 
+Arrays can contain primitive or Objects whereas ArrayList can contain only Objects.
+Arrays are fixed size whereas ArrayList size is dynamic.
+Arrays doesn’t provide a lot of features like ArrayList, such as addAll, removeAll, iterator etc.
+
 Queue Interface 
 
 orders the element in FIFO(First In First Out) manner
@@ -174,8 +178,6 @@ while(i.hasNext()){
 	i.remove();
 }
 
-
-
 Comparable and Comparator both are interfaces and can be used to sort collection elements
 
 	Comparable provides a single sorting sequence while comparator can use multiple. That means comparator can use multiple field for sorting like name and id. Comparator modifies actual class and comparable does not
@@ -187,3 +189,10 @@ we can also use Array.sort() and Collections.sort()
  binary search, sorting, shuffling, reverse etc.
  
  
+All collection classes (except Vector and Hashtable) in the java.util package are not thread-safe.ie non synchronized
+A piece of code is thread-safe if it only manipulates shared data structures in a manner that guarantees safe execution by multiple threads at the same time.
+ 
+ 
+ concurrent modification exception occurs when you iterate over the element and try to modify the collections at the same time...
+ 
+But Iterator implementation in java.util.concurrent packages are fail-safe and we can modify the collection while iterating. Some of these classes are CopyOnWriteArrayList, ConcurrentHashMap, CopyOnWriteArraySet.

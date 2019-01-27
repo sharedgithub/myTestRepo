@@ -124,6 +124,12 @@ this() invokes another constructor and super() invokes constructor of parent cla
 
 constructor can use any acccess modifier inlcuding private
 
+Default constructor
+public Module()
+{
+  super();
+}
+
 ### Coupling and Cohesion
 
 Encapsulation: Loose coupling and High Cohesion

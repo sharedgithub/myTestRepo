@@ -48,27 +48,6 @@ Local variables are next; they live as long as their method remains on the stack
 
 Block variables live only as long as the code block is executing. for(int i=2;i<20,i++) here i is block variable
 
-## Garbage collector
-
-it makes sure that the heap has as much free space as possible
-
-The garbage collector is under the control of the JVM; JVM decides when to run the garbage collector.
-
-an object is eligible for garbage collection when no live thread can access it
-
-### There are some ways by which we can make object elligible for garbage collection
-
-StringBuffer sb=new StringBuffer("hello");
-sb=null;   // nulling a reference
-sb=new StringBuffer("world");   // reassinment
-
-so the reference variable sb when set to null the stringbuffer object with value hello is elligible for Garbage collection
-
-reassignment also makes the previous hello strigbuffer object elligible for GC
-
-so to request jvm's garbage collector we can use System.gc(). But it is only a request, whether or not jvm will perform garbage collection is not guaranteed.
-
-Object class has finalize() method which is for the object to do cleanup before getting removed by GC. but then again it will run or not is not guranteed.
 
 
 ### Pass by value
@@ -151,30 +130,6 @@ default:
 }
 
 
-## Exceptions
-
-try{
-
-//execute some code
-
-}catch(Exception e){
-
-//handle execption
-
-}finally{
-
-//wite some code which will execute after try whether or not exception occurs
-
-}
-
-so along with try a catch or a finally block is a must
-
-Every exception is subclass of java.lang.Exception
-
-![](http://apprize.info/javascript/oca_2/oca_2.files/image727.jpg)
-
-Exceptions alters program flow
-error represent unusual situation which is not caused by the program  like running out of memory
 
 
 

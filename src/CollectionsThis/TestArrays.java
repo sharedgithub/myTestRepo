@@ -4,8 +4,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-class TestArraysComparator implements Comparator<TestArrays> {
-
+class TestArraysComparator implements Comparator<TestArrays> { // comparator is something which you need to pass along with the class which you are using in collection ...to collection.sort(class, comparator) method
+// hence collection
 	
 	// comparator generic can be ommited then 
 	@Override
@@ -63,7 +63,7 @@ public class TestArrays {//implements Comparable<TestArrays> {
 //		return 0;  //element is not unique
 //	}
 	
-	// overriding equals method if we want to create collection of this object
+	// overriding equals method if we want to create collection of this object and use our own equals mechanism
 	public boolean equals(Object t) {
 		if ((t instanceof TestArrays) && ((TestArrays) t).getRollNo() == rollNo
 				&& ((TestArrays) t).getStudentName() == studentName) {

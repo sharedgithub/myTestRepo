@@ -78,6 +78,7 @@ public class TestSet {
 			so all the collections having Linked keyword is better for bulk removeAll and retainAll
 			as they are linked so removal of element does not require existing eleemnt to shift
 			
+			also for faster iteration all the linked things are better
 			
 		*/
 		
