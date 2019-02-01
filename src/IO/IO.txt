@@ -29,7 +29,7 @@ try with resources we can use to open a single resourece or multiple resources. 
 
 Two benefits of buffered
 	With buffered classes IO operations are only performed when buffer(memory area) is either full(write) or empty(read)
-	Buffered Streams are synchronous while unbuffered are not.This means you can work with multiple threads when using Buffered Streams.
+	Buffered Streams are synchronous while unbuffered are not.This means you can work with multiple threads when using Buffered Streams/
 
 As the performance of FileInputStream and FileOutputStream is low it is preffered to use BufferedInputStream and BufferedOutputStream
 BufferedInputStream and BufferedOutputStream uses buffer of byte arrays around 8192 bytes

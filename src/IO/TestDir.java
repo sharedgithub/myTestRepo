@@ -1,5 +1,7 @@
 package IO;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -25,41 +27,50 @@ public class TestDir {
 	
 	public static void main(String[] args) throws IOException {
 		
-		File dir1 =new File("Anuj");
-		File dir2=new File("Anuj2");
+		File dir1 =new File("Fold1");
+		File dir2=new File("fold2");
 		
 		//note the package here which is java.io
 		
 //		FileUtils.copyDirectory("Anuj","Anuj2");FileUtils from Apache Commons IO (the easiest and safest way)
 		
-		copy(dir1,dir2);
-		
-		
-		if(!dir1.isDirectory()) {
-			System.out.println(" This directory does not exist");
-			throw new FileNotFoundException();
-		}
-		
-		List<File> ne=Arrays.asList(dir1.listFiles());
-		System.out.println("Total items in the folder:"+ne.size());
-		int fileCount = 0,folderCount=0;
-		for(File f:ne) {
-			if(f.isDirectory()) {
-				folderCount++;
-			}else {
-				fileCount++;
-			}
-		}
+//		copy(dir1,dir2);
+//		
+//		
+//		if(!dir1.isDirectory()) {
+//			System.out.println(" This directory does not exist");
+//			throw new FileNotFoundException();
+//		}
+//		
+//		List<File> ne=Arrays.asList(dir1.listFiles());
+//		System.out.println("Total items in the folder:"+ne.size());
+//		int fileCount = 0,folderCount=0;
+//		for(File f:ne) {
+//			if(f.isDirectory()) {
+//				folderCount++;
+//			}else {
+//				fileCount++;
+//			}
+//		}
 //		System.out.println("Total files in the folder:"+fileCount);
-		System.out.println("Total folders in the folder:"+folderCount);
+//		System.out.println("Total folders in the folder:"+folderCount);
 		
-		try(BufferedReader b=new BufferedReader(new FileReader(new File("Anuj/aj.txt")));
-				BufferedWriter o=new BufferedWriter(new FileWriter(new File("Anuj/aj2.txt")))){
-			String line = b.readLine();
-			while (line!=null) {
-				o.write(line);
-				o.newLine();
-				line=b.readLine();
+//		try(BufferedReader b=new BufferedReader(new FileReader(new File("Fold1/putty.exe")));
+//				BufferedWriter o=new BufferedWriter(new FileWriter(new File("fold2/putty.exe")))){
+//			String line = b.readLine();
+//			while (line!=null) {
+//				o.write(line);
+//				o.newLine();
+//				line=b.readLine();
+//			}
+//		}
+		
+		try(BufferedInputStream b=new BufferedInputStream(new FileInputStream(new File("Fold1/putty.exe")));
+				BufferedOutputStream o=new BufferedOutputStream(new FileOutputStream(new File("Fold1/putty.exe")))){
+			int len;
+			byte[] buff=new byte[11];
+			while ((len=b.read(buff))>0) {
+				o.write(buff,0,len);;
 			}
 		}
 		
