@@ -20,6 +20,14 @@ Class can not extend multiple classes due to deadly diamond of death trap
 
 ![](https://1.bp.blogspot.com/-l3ZiXtNH22g/UXKwMchtD1I/AAAAAAAACFY/E_ql9QRIjj8/s1600/Capture.JPG)
 
+class A{  void burn() { implementaion}}
+class B extends A{ void burn() {implementation}}
+class C extends A{void burn(){implementation}}
+
+class D extends A,B{
+ inside main when you will call burn method which burn method will be called?
+}
+
 private members( methods and variables) are not exposed by the class it can only be called by public members of the class but not from reference variable of the class
 
 ### Overriding
@@ -99,7 +107,7 @@ so in downcasting check below example...we can create refrence variable of more 
 
 
 ### Constructor chaining
-http://apprize.info/javascript/oca_2/oca_2.files/image253.jpg
+![](http://apprize.info/javascript/oca_2/oca_2.files/image253.jpg)
 
 
 ## Constructor rules
