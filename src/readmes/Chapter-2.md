@@ -1,6 +1,7 @@
 
 
 class A{
+	void doSometthig(){}
 }
 
 Class C{}
@@ -9,6 +10,12 @@ public interface D{}
 
 class B extends A implements D{
     private C animal;
+    
+    @Override
+    void doSomethig(){
+    	super.doSomething();
+    }
+    
 }
 
 B extends A => B IS-A A and B IS-A D and B IS-A Object
