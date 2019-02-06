@@ -91,8 +91,8 @@ String is a sequence of unicode characters
 String is immutable
 
 Strings literal are created in string pool on the heap.
- if String abc; and String bcd are storing same "anuj" value then they are refering to the same value in the string pool and not two different "anuj" value. So memory is saved.
-  But with the new keywork ie new String("anuj") if we make two string object then two copy of same string literal anuj is created in memory.
+ if String abc; and String bcd are storing same "Ravan" value then they are refering to the same value in the string pool and not two different "Ravan" value. So memory is saved.
+  But with the new keywork ie new String("Ravan") if we make two string object then two copy of same string literal Ravan is created in memory.
 
 startwith
 endswith
@@ -100,13 +100,13 @@ compareTo
 substring
 String.valueOf // valueOfMethod takes primitive values and give there string representation whereas toString is for string representation of objects
 
-String s1="anuj";
-String s2="anuj";
+String s1="Ravan";
+String s2="Ravan";
 
-String s3=new String("anuj")
-String s4=new String("anuj")
+String s3=new String("Ravan")
+String s4=new String("Ravan")
 
-so for all the above statement one string literal "anuj" is created in the string pool first two string variable refer to same string literal
+so for all the above statement one string literal "Ravan" is created in the string pool first two string variable refer to same string literal
 The next two variable contains two object on the heap refering to the same string literal
 
 s1==s2 will return true whereas s3==s4 will return false
@@ -120,8 +120,8 @@ on an string object we can call .intern() method so that string object refers to
 
 like :
 
-String a="anuj"
-String b=new String(("anuj")
+String a="Ravan"
+String b=new String(("Ravan")
 a==b  //false
 a==b.intern() //true
 
