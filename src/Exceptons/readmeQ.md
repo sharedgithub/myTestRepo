@@ -100,5 +100,5 @@ reassignment also makes the previous hello strigbuffer object elligible for GC
 
 so to request jvm's garbage collector we can use System.gc(). But it is only a request, whether or not jvm will perform garbage collection is not guaranteed.
 
-Object class has finalize() method which is for the object to do cleanup before getting removed by GC. but then again it will run or not is not guranteed.
+Object class has finalize() method which is for the object to do cleanup before getting removed by GC. but then again it will run or not is not guranteed. You can override finalize method and write steps which will be performed before the garbage collector remove it from the heap
 

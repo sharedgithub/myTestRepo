@@ -10,7 +10,7 @@ public class Map {
 		TestArrays t2=new TestArrays(1,"3sdf");
 		
 		
-		TreeMap<TestArrays,Integer>m=new TreeMap<TestArrays,Integer>((new TestArraysComparator()) );
+		TreeMap<TestArrays,Integer> m=new TreeMap<TestArrays,Integer>((new TestArraysComparator()) );
 	
 		
 		m.put( new TestArrays(2,"Anuj"),2);
@@ -32,7 +32,7 @@ public class Map {
 ////		m.remove(key);
 //		
 ////		entrySet(): returns a Set view of the mappings contained in this map. Therefore we can iterate over mappings in the map like this:
-//		
+//		//entry is an interface to provide methods to acccess key values of a map
 //		Set<Entry<Integer,TestArrays>> entries=m.entrySet();
 //		
 //		for(Entry<Integer,TestArrays> entry:entries) {

@@ -1,7 +1,10 @@
 package CollectionsThis;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.Comparator;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
@@ -9,23 +12,21 @@ import java.util.Set;
 import java.util.TreeSet;
 import java.util.logging.Logger;
 
-import org.apache.catalina.filters.AddDefaultCharsetFilter;
-
 public class Practice_Collection {
 	
 	
 	public static void main(String args[]) {
 		System.out.println("practice set2");
 		
-//		MovieNameSet m1=new MovieNameSet();
-//		m1.addHero("arjun");
-//		m1.addHero("hero");
-//		m1.addHero("ved");
-//		m1.addHero("hero");
-//		m1.addHero("ashok");
-//		m1.showAllHeroes();
-//		m1.removeHero("hero");
-//		m1.showAllHeroes();
+		MovieNameSet m1=new MovieNameSet();
+		m1.addHero("arjun");
+		m1.addHero("hero");
+		m1.addHero("ved");
+		m1.addHero("hero");
+		m1.addHero("ashok");
+		m1.showAllHeroes();
+		m1.removeHero("hero");
+		m1.showAllHeroes();
 		
 		
 		Movie m1=new Movie("m1",1988);
@@ -195,5 +196,40 @@ class Diff_Linked_Array_List{
 		}
 	}
 }
-	
 
+
+class mapDeo{
+	public static void main(String args[]) {
+		List<String> ls = new ArrayList<>();
+		
+		ls.add("disco");
+		ls.add("pancer");
+		ls.add("al habibi");
+
+		ls.add("disco");
+		
+		Set<String> a=new HashSet<>(ls); // this statement will remove the duplicate values
+		
+		for(String s:a) {
+			System.out.println(s);
+		}
+		
+	
+	}
+}
+	
+class adbc{
+	public static void main(String[] args) {
+
+		
+		String a="this is wat a notification is";
+		
+		char[] b=a.toCharArray();
+
+		List<String> d=Arrays.asList(a);
+		
+		Set<String> e=new HashSet<>(d);
+
+		int db=2;
+	}
+}
