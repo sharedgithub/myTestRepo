@@ -13,7 +13,7 @@ class B extends A implements D{
     
     @Override
     void doSomethig(){
-    	super.doSomething();
+    	super.doSomething(); //this is how you can call super class method
     }
     
 }
@@ -84,33 +84,6 @@ public void eat(String food){}  // overloading
 ![](http://apprize.info/javascript/oca_2/oca_2.files/image211.jpg)
 
 ![](http://apprize.info/javascript/oca_2/oca_2.files/image213.jpg)
-
-
-### Reference Variable Casting
-
-Implicit Cast==> Dog d=new Dog(); Animal a=d;
-
-Explicit Cast==> Animal a=(Dog) d;
-
-Up Casting==> same as above
-
-Down Casting==> Dog d=(Dog)(new Animal())
-
-
-so in downcasting check below example...we can create refrence variable of more generic type from child class		
-
-		Animala a=new Dog();  /// to create a dog instance from animal we have to upcast =>>   Dog d=(Dog) new Animala();
-		if(a instanceof Animala) {   //// check instanceof
-			Dog d= (Dog)a; //down casting....to use dog specific thing from animal refrence
-			d.speak();
-		}
-		
- 
-		Dog d=new Dog();
-		Animala a=(Animala)d;  //upcasting
-		a.speak();// this is ok but at runtime overridden method will be called as initially object is of type dog
-
-
 
 
 ### Constructor chaining

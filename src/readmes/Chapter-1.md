@@ -22,8 +22,7 @@ long 			0L
 double 			0.0d
 float)			0.0f
 
-2) Refrence variables( not instance variable which are defined outside the methods but inside the class)( and not local varables which are defined in methods)
-
+2) Refrence variables
 
 # Modifiers-> Access and Non Access Modifiers
 
@@ -93,12 +92,6 @@ Abstract class is used when you know partial implementation, where say out of 5 
 	}
 
 
-
-# multiple parameter methods
-
-* methods can also take multiple parameter
-
- 8 public void jaihanuman(int a, String... abc) this means that the var-arg short for variable argument can take multiple string parameters). Also note that var-args should always be the last parameter
   
 # Enum 
 

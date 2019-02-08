@@ -67,7 +67,11 @@ Arays are objects which can store multiple variables of same type. It can hold e
 
 ### initialization block
 
-so initialization block of a class are of two type static and normal initialization block...it is used to execute code when class is loaded first with new keyword. static init block executes first and normal init block executes after static block. In case a class has a main method ...and a static block...and inside main, there is no object of the same class created using new keyword then in this case..static initializr block still will be called first as this class has to load first to call the main method inside it.
+so initialization block of a class are of two type static and normal initialization block...it is used to execute code when class is loaded first with new keyword. static init block executes first and normal init block executes after static block. 
+
+so every time an object is created non static block will be called. but static block will be called only for the first object.
+
+In case a class has a main method ...and a static block...and inside main, there is no object of the same class created using new keyword then in this case..static initializr block still will be called first as this class has to load first to call the main method inside it.
 
 class Animal{
 
@@ -79,7 +83,6 @@ static{ int x=3;}
 
 }
 
-so every time an object is created non static block will be called. but static block will be called only for the first object.
 
 
 ### ternary operator

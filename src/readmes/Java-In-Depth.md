@@ -16,6 +16,17 @@ long y=65: int x = (int) y ...casting generic version to more specific version
 
 so with both implicit and explicit typecast there is a chance of data loss like if you convert float to int the value after the points get truncated
 
+
+Explicit casting has two thing up casting and down casting
+
+Child d=(Parent)p;  // here compiler will not throw error but at runtime exception will be thrown as we are trying to cast one type of object 					to other
+
+Parent p=(Parent)c; //upcasting child object to supertype reference but actual object will be child. this never fails
+Child c=(Child)p; //this is called downcasting where the supertype reference holding the child object is given childtype refrence
+
+downcasting is required if there is a method defined in child and you want to call using parent reference...like ((Child) p).doSomethig();
+
+
 => object are stored in heap with null as there default value
 
 arrays are basically object with fixed number of items and of same type
@@ -151,21 +162,6 @@ using stringbuilder it is O(N) with its append method
 
 mutator and accessor=> setter and getter
 
-# instance initializers
-
-static initializers and non static initializers
-
-class test(){
-
-{
-instance initializers
-}
-
-static{
-static 
-}
-
-}
 
 ## constant and final variable ...
 
@@ -198,8 +194,8 @@ c.isLowerCase();
 Double d=new Double(123)
 
 Parsing string'
-int a=Integer.parseInt("234");
-Integer a=Integer.valueOf("234");
+int a=Integer.parseInt("234");  // parseXXX method return primitive of the type xxx
+int a=Integer.valueOf("234");  //valueOf method return object of type of the wrapper class
 
 Object.hashcode(); will provide memory address in hashcode
 
