@@ -114,3 +114,57 @@ A URI’s format is <protocol>://<service-name>/<ResourceType>/<ResourceID>.
 
 
 [https://www.katalon.com/resources-center/blog/web-api-testing-interview-questions/]
+
+
+
+
+public class RestClass {
+	RestAssured.baseURI = "http://localhost:3000";
+	String user=null;
+	//https://reqres.in/
+	@Test
+	public void testThis(RequestPOJO rs){
+		
+		JSONObject requestBody = new JSONObject();//either this or pojo object
+		requestBody.put("name", config.getLibName());
+		requestBody.put("modality", config.getModality());
+		requestBody.put("createdBy", config.getUserName());
+		requestBody.put("modifiedBy", config.getUserName());
+		requestBody.put("standard", "No");
+		
+		
+		user="users";
+		given()
+			.header("Content-Type", "application/json")
+			.proxy("3.28.29.242", 80)
+			.pathParam("user", user)
+//			.body(rs)
+		.when()
+			.get("https://reqres.in/api/{user}?page=2")
+		.then()
+			.statusCode(200)
+			.body("total_pages",is(4))
+			.body("message", equalTo("Apartments with id:  successfully deleted"))
+//			.body(matchesJsonSchemaInClasspath("schema-json.json"))
+			.body("data.id", is(4))
+			.body("$.store.book[0].title", arg1)
+			;
+	
+		}
+	
+	
+	@DataProvider(name = "apartments")
+	public Object[][] createData() {
+	 return new Object[][] {
+	   { new RequestPOJO("New York, Wave str 7", 80000, 65) },
+	   { new RequestPOJO("New York, GreenHill str 11", 87000, 80) },
+	   { new RequestPOJO("New York, Fast ave 22", 120000, 90) },
+	   { new RequestPOJO("New York, Lotos Park 3", 90000, 95) },
+	   { new RequestPOJO("New York, Brown str 48", 100000, 100) },
+	   { new RequestPOJO("New York, Astoria sq", 95000, 105) },
+	   { new RequestPOJO("New York, North str 18", 92000, 110) },
+	   { new RequestPOJO("New York, West ave9", 150000, 115) },
+	   { new RequestPOJO("New York, Brown str 7", 10000, 120) },
+	 };
+	}
+}
