@@ -23,9 +23,8 @@ class tempc2 extends temp{
 }
 
 class zoeo<T>{
-	
+	T t;
 	
 	void doit(T t) {
-		((temp) t).hello();
 	}
 }

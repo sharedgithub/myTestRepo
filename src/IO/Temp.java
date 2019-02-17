@@ -1,31 +1,15 @@
 package IO;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.IOException;
 
 public class Temp {
 	
-	File a=new File();
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
-		
-		try(BufferedReader b=new BufferedReader(new FileReader(new File("")));
-				BufferedWriter c=new BufferedWriter(new FileWriter(new File("")))){
-			
-				String text=b.readLine();
-				while(text!=null) {
-					
-					c.write(text);
-					c.newLine();
-					text=b.readLine();
-				}
-			
-		}
-		
+		File a=new File("abc.txt");
+		a.is
 	}
-
 }
