@@ -1,6 +1,29 @@
-error occurs in code
-bug defect in the application
+Most of the defects occurs during requiremtn and design phase. phase containment is when we restrict defect to the phase where they are caught
+
+Quality is degree by which a system/component/process meets user/customer requirements. Testing provide way to measure the quality of the system. No of defects, test coverage, pass/fail tests
+
+In some cases software testing is not just a googd way to reduce ristks to the quality of the system to an acceptable level:testing can be required to meed contractual or legal requirement or industry specific standards.
+
+System Testing includes both Functional tests as well as Non-Functional tests.
+
+Functional testing ensures that the product/application meets customer and business requirements. On the other hand, non-functional testing is done to verify if the product stands up to customer's expectations in terms of quality, reliability usability, performance, compatibility, etc.
+
+Rist is something which can lead to negative concequences.
+
+error occurs due to human mistake. Like if incorrect password is entered that is erro
+bug defect fault are the same thing and occurs due to incorrect system implementation or error in development like for the above scenario if the error  message is different 
 failure is the diffrence between constumer expection and actual product
+
+# 7 principles
+ Testing shows presence of defect: yes it does but it does not gurantee your application is defect free
+ 
+ Absence of error fallacy: testing is fine ..but the product should be usable to the end users
+ Pestcide paradox: same test executed again and again reduces their defect detection effectiveness
+ Context dependent: Type of testing depends on the type of product
+ Defect clustering: Defects has tendence to form clusters accross the application
+ Early testing:
+ Exhaustive testing not possible
+ 
 
 in static testing code is not executed...like testing FRS or code
 in dynamic testing code is executed
