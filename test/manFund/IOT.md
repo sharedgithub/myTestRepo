@@ -4,7 +4,7 @@
 * Things ( devices, sensors wearables, drones)
 
 
-##Diffferent layers
+## Diffferent layers
 
 Device Layer: Consist of various devices like sensors, wearables, smart meters, smartphones, drones...etc and huge set of standard and custom communication protocol like ZigBee, BACNet, LLRP, Mobdus
 
@@ -15,7 +15,7 @@ Data processing layer: batch processing of transformed data from device layer to
 
 APPlication layer: 
 
-##Chalenges
+##C halenges
 1) Dynamic Environment: millons of sensors and different devices connection with the softwares and cloud
 
 2) Real time complexity: IOT applicaitons can have multiple real time scenarios and its usecases are extremely complex
@@ -37,7 +37,7 @@ To certify an IoT system or service, it is not enough to merely ensure a working
 
 Large number of sensor interactions: The creation of an environment to test a real-time IoT implementation is a challenge. It entails not only configuring an environment to validate the correctness, but also to assess scalability and reliability. The system is built on numerous analytics engines, and demands a significant experience in simulation to build out a test environment. While the hardware and the rotocols are typically well tested by device makers, understanding application intelligence and the device’s real-time complexity is an extremely new art and science for many application developers and QA experts.
 
-##Types of testing:
+## Types of testing:
 
 Functional 
 As this is an architecture between different set(s) of hardware and software, it becomes mandatory that they talk to each other in real time/near real time. When they both integrate with each other, things such as security, backward compatibility, upgrade issues becomes a challenge for the testing team.
@@ -51,7 +51,8 @@ Performance Testing:testing with device low battery, differenct memory configura
 Service Testing:IOT app web service testing
 Operational Testing: TO verify app behavour when its fully charged or updated or misscall or network down
 
-Solutions:
+
+## Solutions:
 
 Protocol simulators: One of the interesting aspects of IoT QA is the ability to work with multiple protocols. Protocol simulators can come in handy when there is a huge variety of device end-points and interfaces to validate
 
@@ -63,9 +64,22 @@ Data recorders: Data recorders from different types of devices can be helpful in
 
 Virtualization: This is an important aspect of IoT validation. Due to highly complex IoT interfaces, there is little opportunity for real-time validation of application behavior. Therefore, it will still be beneficial to bring in an ample amount of virtualization into the services on which IoT applications are built. Virtualization of an IoT ecosystem yields the benefits of faster turnaround and reduced costs due to minimal dependency on the production environment for testing. It also leads to earlie
 
+Orient people to gain an amalgamation of skills, combining QA, quality engineering and hardware validation to meet the demands of ioT QA.
 
 
-##Final thoughts
+• Build collaborative QA teams with a view toward performing integrated tests spanning hardware, software and big data layers, thereby augmenting the niche and broader aspects of IoT testing.
+
+
+• Look for tool-build opportunities: As the distinctions between hardware and software blur,there is a plethora of opportunities to build solutions to enhance QA across the internal systems ecosystem.
+
+
+• Build labs that serve the entire digital portfolio, to experiment and simulate real-time experiences that inform smarter ways of testing.
+
+
+• Build a culture of “test as a user” vs. a mind-set in which the organization merely tests against requirements; this will ensure the “experience” component of the IoT stream is well-established for a comprehensive quality product or service.
+
+
+## Final thoughts
 
 
 
@@ -81,18 +95,3 @@ There are a few methods to create such an ecosystem; for example, leveraging san
 The investments made in IT infrastructure and marketing can take businesses only so far, particularly if they do not have a holistic approach to testing the IoT ecosystem. As IoT expands beyond the periphery into the mainstream of consumer and enterprise markets, QA teams must gear up to help their organizations take advantage of the tremendous opportunities created by the ongoing business digitization. It’s time for QA organizations to empower their companies with reliable IoT products and services that make good on the promise of smart, connected devices that elevate everything from personal wellness/hygiene and driving, through manufacturing, logistics management and air travel. With ever-greater blending of IoT into business and IT, it is necessary for the QA teams to upskill beyond traditional functional testing and gear up for integrated testing of embedded software, IT solutions and big data — and to understand their influence on one another. 
 
 
-
-
-Orient people to gain an amalgamation of skills, combining QA, quality engineering and hardware validation to meet the demands of ioT QA.
-
-
-• Build collaborative QA teams with a view toward performing integrated tests spanning hardware, software and big data layers, thereby augmenting the niche and broader aspects of IoT testing.
-
-
-• Look for tool-build opportunities: As the distinctions between hardware and software blur,there is a plethora of opportunities to build solutions to enhance QA across the internal systems ecosystem.
-
-
-• Build labs that serve the entire digital portfolio, to experiment and simulate real-time experiences that inform smarter ways of testing.
-
-
-• Build a culture of “test as a user” vs. a mind-set in which the organization merely tests against requirements; this will ensure t`he “experience” component of the IoT stream is well-established for a comprehensive quality product or service.
