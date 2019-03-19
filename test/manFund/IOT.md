@@ -15,7 +15,7 @@ Data processing layer: batch processing of transformed data from device layer to
 
 APPlication layer: 
 
-##C halenges
+## Chalenges
 1) Dynamic Environment: millons of sensors and different devices connection with the softwares and cloud
 
 2) Real time complexity: IOT applicaitons can have multiple real time scenarios and its usecases are extremely complex
