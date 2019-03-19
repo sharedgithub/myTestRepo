@@ -1,0 +1,33 @@
+Device Layer: Consist of various devices like sensors, wearables, smart meters, smartphones, drones...etc and huge set of standard and custom communication protocol like ZigBee, BACNet, LLRP, Mobdus
+
+Data Ingestion and transformation: Data from different data layer transformed to standard format for further processing by data processing layer
+    This data could be from sensors, actuators, wearable, RFID received via TCP/IP socket communication or messaging queues like MQTT,AMPQ, CoAP, DDS, KAfka and HTTP/HTTPS over rest API
+    
+Data processing layer: batch processing of transformed data from device layer to perform image,preventive, and predictive analysis
+
+APPlication layer: 
+
+##Chalenges
+1) Dynamic Environment: millons of sensors and different devices connection with the softwares and cloud
+
+2) Real time complexity: IOT applicaitons can have multiple real time scenarios and its usecases are extremely complex
+
+3) Scalability of systems: to create an envrionment for test ..to test functional and non functional aspects is real challenging
+
+4) Complex set of usecases to create test cases and test data
+
+5) security and privacy
+
+6) safety concerns
+
+
+Types of testing:
+
+Functional Testing:
+Compatibility Testing: device versions, communication protoocl version, os version, device software version
+Usablity Testing:
+Network Testing:testing on different kind of internet connection
+Security Testing:
+Performance Testing:testing with device low battery, differenct memory configuration
+Service Testing:IOT app web service testing
+Operational Testing: TO verify app behavour when its fully charged or updated or misscall or network down
