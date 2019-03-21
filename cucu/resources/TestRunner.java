@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
-@CucumberOptions(features="restAss/restMain/F1.feature")
+@CucumberOptions(features="cucu/restMain/F1.feature")
 public class TestRunner {
 
 }
