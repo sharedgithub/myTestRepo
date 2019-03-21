@@ -1,6 +1,35 @@
-error occurs in code
-bug defect in the application
+Most of the defects occurs during requiremtn and design phase. phase containment is when we restrict defect to the phase where they are caught
+
+Quality is degree by which a system/component/process meets user/customer requirements. Testing provide way to measure the quality of the system. No of defects, test coverage, pass/fail tests
+
+In some cases software testing is not just a googd way to reduce ristks to the quality of the system to an acceptable level:testing can be required to meed contractual or legal requirement or industry specific standards.
+
+System Testing includes both Functional tests as well as Non-Functional tests.
+
+Functional testing ensures that the product/application meets customer and business requirements. On the other hand, non-functional testing is done to verify if the product stands up to customer's expectations in terms of quality, reliability usability, performance, compatibility, etc.
+
+Risk is something which can lead to negative concequences.
+
+Quality of software testing: 
+1) interpersonal and communication skill: knowing how to communicate is neccessary but knowledge of what to say and when to say is what is requrired here...0
+2) Should be able to catch details
+3) Explorer 
+
+error occurs due to human mistake. Like if incorrect password is entered that is erro
+bug defect fault are the same thing and occurs due to incorrect system implementation or error in development like for the above scenario if the error  message is different 
 failure is the diffrence between constumer expection and actual product
+
+# 7 principles
+ Testing shows presence of defect: yes it does but it does not gurantee your application is defect free
+ 
+ Absence of error fallacy: testing is fine ..but the product should be usable to the end users
+ Pestcide paradox: same test executed again and again reduces their defect detection effectiveness
+ Context dependent: Type of testing depends on the type of product
+ Defect clustering: Defects has tendence to form clusters accross the application
+ Early testing:
+ Exhaustive testing not possible
+ 
+ 
 
 in static testing code is not executed...like testing FRS or code
 in dynamic testing code is executed
@@ -67,16 +96,7 @@ Return on investment can be calculated in durations or money
 
  GAIN in the time takes with AUtomation (this will also include effort for manual cases which can not be automated)
  
- seven principles of testing 
- 
- 1. Testing shows the presence of bugs
- 2. Exhaustive testing is impossible
- 3. Early testing
- 4. Defect clustering
- 5. The pesticide paradox
- 6. Testing is context dependent
- 7. Absence of errors fallacy
- 
+
  defect life cycle
  
  Raised -> Reviewd-> Open-> Assigned-> fixed-> closed=> accepted
@@ -89,4 +109,7 @@ Return on investment can be calculated in durations or money
  Boundy value: if text accept -100 to 100 then first we use equivalence partition and use boundry values of those partiiton
  
  state transiton 
+ 
+ Verification is evaluation against functional and software requirements
+ Validation is against user requirement specifications
  
