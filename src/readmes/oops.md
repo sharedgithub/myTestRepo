@@ -9,8 +9,10 @@ Aggregation
 * Abstraction is to hide the implementation and expose only which is meaningful and simple...like exposing object methods but leave the details in its implementation
 
 * encapsulation is bringing data and funtions to a single unit like classes
+Polymorphism is the ability of an object to take on many forms.
+* compile time polymorphism is method overloading and It is also known as Static binding, Early binding and overloading as well. call to overloaded method is resolved at compile time.
 
-* compile time polymorphism is method overloading and runtime polymorphism is method overiding as it is at runtime when the compiler decides
+* runtime polymorphism is method overiding as it is at runtime when the compiler decides. Dynamic binding and late binding
 Polymorphism lets us perform a single action in different ways. like eat method of different animals
 Polymorphism allows you to define one interface and have multiple implementations
 We can create functions or reference variables that behave differently in different programmatic context.
