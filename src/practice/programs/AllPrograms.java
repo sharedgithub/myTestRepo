@@ -98,8 +98,8 @@ public class AllPrograms {
 		
 	}
 	
-	void reverseUsingRecursion(String a) {
 		
+	void reverseUsingRecursion(String a) {
 	}
 	
 	void reverseUsingHalfTheLength() {

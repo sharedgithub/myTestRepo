@@ -34,6 +34,7 @@ float)			0.0f
 * to local variables only one non access modifiers can be applied which is final
 * Public classes can be accessed from any where
 * Default access is package level access. Classes can be accessed only by the classes of same package
+* interfaces can have only public and abstract modifiers
 
 ### Non Access Modifiers-> final abstract strictfp
 
@@ -94,8 +95,7 @@ Abstract class is used when you know partial implementation, where say out of 5 
 
   
 # Enum 
-
-* it is a list of constants of type enum
+* special class containing list of objects
 
 * enum can be declared outside or inside a class but not in methods
 
@@ -116,7 +116,7 @@ public enum myEnum{
 
 * A non static method can access static method
 
-*
+* 
 
 # Array 
 

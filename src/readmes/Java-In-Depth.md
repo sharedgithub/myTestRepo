@@ -22,9 +22,9 @@ Explicit casting has two thing up casting and down casting
 Child d=(Parent)p;  // here compiler will not throw error but at runtime exception will be thrown as we are trying to cast one type of object 					to other
 
 Parent p=(Parent)c; //upcasting child object to supertype reference but actual object will be child. this never fails
-Child c=(Child)p; //this is called downcasting where the supertype reference holding the child object is given childtype refrence
+Child c=(Child)p; //this is called downcasting where the supertype reference holding the child object is given childtype refrence. Here p must be Parent reference to child object
 
-downcasting is required if there is a method defined in child and you want to call using parent reference...like ((Child) p).doSomethig();
+downcasting is required if there is a method defined in child only and you want to call using parent reference...like ((Child) p).doSomethig();
 
 
 => object are stored in heap with null as there default value
