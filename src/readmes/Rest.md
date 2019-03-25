@@ -168,3 +168,4 @@ public class RestClass {
 	 };
 	}
 }
+http://angiejones.tech/rest-assured-with-cucumber-using-bdd-for-web-services-automation/
