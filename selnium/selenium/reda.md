@@ -397,10 +397,39 @@ WebDriver driver = new FireFoxDriver();
  	js.executeScript("window.scrollTo(0, document.body.scrollHeight)"); scroll to the end
  	js.executeScript("arguments[0].scrollIntoView();", Element); bring element to visible area
 	js.executeScript("arguments[0].scrollIntoView();", Element);
+ 	js.executeScript("return document.readyState").equals("complete");
  
- Thread.sleep(3000);
+ 	((JavascriptExecutor)driver).executeScript("arguments[0].checked = true;", checkbox); see if webelement checkbox is checked
+ 	Thread.sleep(3000);
  
 
+
+// Get the current window handle.
+String hBefore = driver.getWindowHandle();
+
+// Click to open new windows.
+
+// Switch to new windows.
+for(String hNew: driver.getWindowHandles()){
+    driver.switchTo().window(hNew);
+}
+
+// Close all new windows.
+driver.close();
+
+// Switch back to first window.
+driver.switchTo().window(hBefore);
+
+// Resume your work.
+
+File ieDriver = new File("path/to/iexploredriver.exe");
+System.setProperty("webdriver.ie.driver", ieDriver.getAbsolutePath());
+
+driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL +"t"); opening a new tab
+
+ArrayList<String> tablist = new ArrayList<String> (driver.getWindowHandles());
+
+driver.switchTo().window(tablist.get(0));
 
 
 String color = driver.findElement(By.xpath("//a[text()='Shop']")).getCssValue("color");
