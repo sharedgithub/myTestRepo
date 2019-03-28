@@ -13,7 +13,7 @@ Selenium is a suite of tools for automated web testing.  It is composed of:
 * selenium core is obsolete
 * Selenium RC API are moved to legacy code
 * java 8 is required
-* stability 
+* stability and bug fixes
 
 ### PROS
 
