@@ -8,6 +8,12 @@ Selenium is a suite of tools for automated web testing.  It is composed of:
 
 *Grid: you can distribute tests on multiple machines so that test can be run parallel which helps cutting down the time required for running test suites in the browser.
 
+## Selenium 3 feature
+
+* selenium core is obsolete
+* Selenium RC API are moved to legacy code
+* java 8 is required
+* stability 
 
 ### PROS
 
@@ -379,17 +385,22 @@ driver.findElement(By.xpath(“xpath of textbox ”)).getSize().getWidth();
 driver.findElement(By.xpath(“xpath of textbox ”)).getSize().getHeight();
 
 WebDriver driver = new FireFoxDriver();
-if (driver instanceof JavascriptExecutor) {
-((JavascriptExecutor)driver).executeScript("{JavaScript Code}");
-}
+	
+	if (driver instanceof JavascriptExecutor) {
+		((JavascriptExecutor)driver).executeScript("{JavaScript Code}");
+	}
 
- JavascriptExecutor jsx = (JavascriptExecutor)driver;
+ 	JavascriptExecutor jsx = (JavascriptExecutor)driver;
  
- jsx.executeScript("window.scrollBy(0,4500)", ""); //scroll down
+ 	jsx.executeScript("window.scrollBy(0,4500)", ""); //scroll down
+  	jsx.executeScript("window.scrollBy(450,0)", ""); //scroll up
+ 	js.executeScript("window.scrollTo(0, document.body.scrollHeight)"); scroll to the end
+ 	js.executeScript("arguments[0].scrollIntoView();", Element); bring element to visible area
+	js.executeScript("arguments[0].scrollIntoView();", Element);
  
  Thread.sleep(3000);
  
- jsx.executeScript("window.scrollBy(450,0)", ""); //scroll up
+
 
 
 String color = driver.findElement(By.xpath("//a[text()='Shop']")).getCssValue("color");
