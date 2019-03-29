@@ -169,3 +169,59 @@ public class RestClass {
 	}
 }
 http://angiejones.tech/rest-assured-with-cucumber-using-bdd-for-web-services-automation/
+
+
+
+	// json to object
+		ABC res = new Gson().fromJson(new FileReader("new.json"), ABC.class);
+		
+		System.out.println(res.getWord());
+		System.out.println(res.getPot().getD().get(2).getDa());
+		
+		// from string
+		
+		String jsonInString = "{'word' : 'mkyong'}";
+		ABC res2  = new Gson().fromJson(jsonInString, ABC.class);
+		
+		// object to json
+	
+		FileWriter fw=new FileWriter("abc.json");
+		new Gson().toJson(res2,fw);
+		fw.flush();
+		fw.close();
+	}
+	
+	
+}
+
+@Data
+class ABC{
+	String word;
+	String aan;
+	PQR pot;
+}
+@Data
+class PQR{
+	String pot;
+	List<ABCD> d;
+}
+
+@Data
+class ABCD{
+	int da;
+}
+
+//{
+//
+//"word":"saysomething",
+//"pot":{
+//		"pot":"halwa",
+//		"d":[
+//			{"da":1},
+//			{"da":2},
+//			{"da":3}
+//			]
+//	  }
+//	
+//
+//}
