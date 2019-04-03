@@ -76,6 +76,12 @@ An HTTP request contains five key elements:
 * Request Header, which carries metadata (as key-value pairs) for the HTTP Request message. Metadata could be a client (or browser) type, format supported by the client, format of a message body format, cache settings, and so on.
 * Request Body, which indicates the message content or resource representation.
 
+CRUD operations is done by apis
+C-Create - post
+R-Retrieve - get
+U-Update - put
+D-Delete -delete
+
 
 The API documentation is a complete, accurate technical writing giving instructions on how to effectively use and integrate with an API
 
