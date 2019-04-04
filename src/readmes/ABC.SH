@@ -19,6 +19,15 @@ NAME[1]="Qadir"
 echo "First Index: ${NAME[0]}"
 echo "Second Index: ${NAME[1]}"
 
+b=("this" "is" "war" "ok")
+
+for c in ${b[@]}
+do
+echo $c
+
+done
+
+
 #display content of a file
 touch file.txt
 cat file.txt
@@ -28,7 +37,7 @@ more file       #
 less file 	# Browse through a text file. doesnot load the file entirely and allow to navigate page by page
 head file 	# Display the first 10 lines of ​file
 tail file	# Display the last 10 lines of ​file
-
+head -20 file
 
 
 cp /home/new.txt /bin/abc.txt #copy file
@@ -155,7 +164,7 @@ elif [condition] || ![condition];then
 fi
 
 
-
+#! is shebang to tell which interpreter should be used
 #!/bin/bash
 
 if [ ! $# -eq 2]; then
