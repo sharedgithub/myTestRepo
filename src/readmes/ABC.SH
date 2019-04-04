@@ -28,6 +28,15 @@ echo $c
 done
 
 
+ foo="I'm a cat, and she's cat."
+ echo ${foo/cat/dog}   # prints "I'm a dog, and she's a cat."
+ echo ${foo//cat/dog}  # prints "I'm a dog, and she's a dog."
+ 
+$$ prints current shell process id pid
+
+# display length of variable
+$ {#variable}
+
 #display content of a file
 touch file.txt
 cat file.txt
@@ -315,3 +324,13 @@ tar cf archive.tar directory	# Create tar named ​archive.tar​ containingdire
 tar xf archive.tar		# Extract the contents from ​archive.tar​.
 tar czf archive.tar.gz directory	# Create a gzip compressed tar file namearchive.tar.gz​.
 tar xzf archive.tar.gz		# Extract a gzip compressed tar file.
+
+
+~ Shell Built in Variables	~ Meaning
+$#	Number of command line arguments.
+$?	Exit Status
+$*	string that contains all arguments to shell
+$@	Same as above, except when quoted.
+$-	Option supplied to shell
+$$	PID of shell
+$!	PID of last started background process (started with &)
