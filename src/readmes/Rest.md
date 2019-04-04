@@ -200,34 +200,38 @@ http://angiejones.tech/rest-assured-with-cucumber-using-bdd-for-web-services-aut
 	
 }
 
-@Data
-class ABC{
-	String word;
-	String aan;
-	PQR pot;
-}
-@Data
-class PQR{
-	String pot;
-	List<ABCD> d;
+	@Data
+	class ABC{
+	 String word;
+	 String aan;
+	 PQR pot;
+	
+	@Data
+	class PQR{
+	 String pot;
+	 List<ABCD> d;
+	}
+	
+	@Data
+	class ABCD{
+	 int da;
+	}
 }
 
-@Data
-class ABCD{
-	int da;
-}
 
-//{
-//
-//"word":"saysomething",
-//"pot":{
-//		"pot":"halwa",
-//		"d":[
-//			{"da":1},
-//			{"da":2},
-//			{"da":3}
-//			]
-//	  }
-//	
-//
-//}
+
+
+		{
+
+		"word":"saysomething",
+		"pot":{
+				"pot":"halwa",
+				"d":[
+					{"da":1},
+					{"da":2},
+					{"da":3}
+					]
+			  }
+			
+		
+		}
