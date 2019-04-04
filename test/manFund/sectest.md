@@ -1,5 +1,7 @@
 https://affinity-it-security.com/what-is-a-session-management-vulnerability/
 
+Open Web Application Security Project (OWASP
+
 # WEB APPLICATION TESTING
 
 A vulnerability is a flaw or weakness in a system's design, implementation, operation or management that could be exploited to compromise the system's security objectives.
