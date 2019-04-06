@@ -126,3 +126,12 @@ public enum myEnum{
 
 * identifiers can only start with a letter, $ and _ characters after that it can have any number of characters without space
 int _a; int $b  are legal
+
+
+ Runtime runtime = Runtime.getRuntime();     //getting Runtime object
+ 
+String[] s = new String[] {"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe", "https://javaconceptoftheday.com/"};
+
+Process p=runtime.exec(s);
+p.destroy();
+

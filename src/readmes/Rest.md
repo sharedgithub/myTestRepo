@@ -76,6 +76,12 @@ An HTTP request contains five key elements:
 * Request Header, which carries metadata (as key-value pairs) for the HTTP Request message. Metadata could be a client (or browser) type, format supported by the client, format of a message body format, cache settings, and so on.
 * Request Body, which indicates the message content or resource representation.
 
+CRUD operations is done by apis
+C-Create - post
+R-Retrieve - get
+U-Update - put
+D-Delete -delete
+
 
 The API documentation is a complete, accurate technical writing giving instructions on how to effectively use and integrate with an API
 
@@ -138,14 +144,14 @@ public class RestClass {
 			.header("Content-Type", "application/json")
 			.proxy("3.28.29.242", 80)
 			.pathParam("user", user)
-//			.body(rs)
+			.body(rs)
 		.when()
 			.get("https://reqres.in/api/{user}?page=2")
 		.then()
 			.statusCode(200)
 			.body("total_pages",is(4))
 			.body("message", equalTo("Apartments with id:  successfully deleted"))
-//			.body(matchesJsonSchemaInClasspath("schema-json.json"))
+			.body(matchesJsonSchemaInClasspath("schema-json.json"))
 			.body("data.id", is(4))
 			.body("$.store.book[0].title", arg1)
 			;
@@ -168,3 +174,64 @@ public class RestClass {
 	 };
 	}
 }
+http://angiejones.tech/rest-assured-with-cucumber-using-bdd-for-web-services-automation/
+
+
+
+	// json to object
+		ABC res = new Gson().fromJson(new FileReader("new.json"), ABC.class);
+		
+		System.out.println(res.getWord());
+		System.out.println(res.getPot().getD().get(2).getDa());
+		
+		// from string
+		
+		String jsonInString = "{'word' : 'mkyong'}";
+		ABC res2  = new Gson().fromJson(jsonInString, ABC.class);
+		
+		// object to json
+	
+		FileWriter fw=new FileWriter("abc.json");
+		new Gson().toJson(res2,fw);
+		fw.flush();
+		fw.close();
+	}
+	
+	
+}
+
+	@Data
+	class ABC{
+	 String word;
+	 String aan;
+	 PQR pot;
+	
+	@Data
+	class PQR{
+	 String pot;
+	 List<ABCD> d;
+	}
+	
+	@Data
+	class ABCD{
+	 int da;
+	}
+}
+
+
+
+
+		{
+
+		"word":"saysomething",
+		"pot":{
+				"pot":"halwa",
+				"d":[
+					{"da":1},
+					{"da":2},
+					{"da":3}
+					]
+			  }
+			
+		
+		}
