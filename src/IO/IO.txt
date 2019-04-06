@@ -1,7 +1,5 @@
 if stream==connection does input stream and output stream makes sense now??
 
-
-
 Byte streams were introduced with JDK 1.0 and operate on the files containing ASCII characters. We know Java supports other language characters also known as Unicode characters. To read the files containing Unicode characters, the designers introduced character streams with JDK 1.1. As ASCII is a subset of Unicode, for the files of English characters, we can go with either byte streams or character streams.
 
 String objects in Java use the UTF-16 encoding that can't be modified. The only thing that can have a different encoding is a byte[] . So if you need UTF-8 data, then you need a byte[]
