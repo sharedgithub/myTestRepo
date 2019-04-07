@@ -1,16 +1,48 @@
 #!/bin/bash
 
+basic component of linux os: kernel, system libraries, system utilities
+
+Linux kernel and application programs can be installed on any kind of hardware platform and thus is considered as portable.
+    It is an open source operating system where programmers get the advantage of designing their own custom OS
+    Software and the server licensing required to install Linux is completely free and can be installed on many computers as required
+    It has low or minimum but controllable issues with viruses, malware, etc
+    It is highly secured and supports multiple file systems.File support system includes Ext2, Ext3, Ext4, Jfs, Xfs, Btrfs, FAT, etc.
+
+Linux Kernel is the component that manages the hardware resources for the user and that provides essential services and interact with the user commands. Linux Kernel is an open source software and free, and it is released under General Public License so we can edit it and it is legal.
+Micro,Monolithic and Hybrid
+
+
+
+linux is made out form unix kernal. linux is unix clone
+ubuntu debian fedora arch linux 
+
+
+There are six levels of a Linux Boot Sequence. These are as follows:
+
+BIOS: Full form of BIOS is Basic Input or Output System that performs integrity checks and it will search and load and then it will execute the bootloader.
+MBR: MBR means Master Boot Record. MBR contains the information regarding GRUB and executes and loads this bootloader.
+GRUB: GRUB means Grand Unified Bootloader. In case, many kernel images are installed on your system then you can select which one you want to execute.
+Kernel: Root file system is mounted by Kernel and executes the /sbin/init program.
+
+
+Swap space is the amount of physical memory that is allocated for use by Linux to hold some concurrent running programs temporarily. This condition usually occurs when Ram does not have enough memory to support all concurrent running programs. 
+
 A shell script is a computer program designed to be run by the Unix/Linux shell which could be one of the following:
 
-    The Bourne Shell
+    The Bourne Shell sh
+    The bourne again shell BASH
     The C Shell
     The Korn Shell
     The GNU Bourne-Again Shell
+
+#loggin with root
+su
 
 # 3 Variable type
 local ,environment and shell variable
 
 #list .sh files names starts with cd
+-l -a -al # -a is for log file name
 ls -l cd*.sh
 
 #Arrays
@@ -81,6 +113,7 @@ user(u) groups (g) others(o) all(a)
 
 -rw-rw-r--   - file   		user: rw- group: rw- all: r--    664
 drwxr-xr-x   d directory  	user: rwx group: r-x all: r-x    755
+lrwxr-xr-x  #l means symbolic links or symlinks ..two types hard and soft
 
 chmod o+wx testfile
 chmod a+x testfile
@@ -270,11 +303,14 @@ sed -n '/peter/p' table.txt
 sed -n '3p' table.txt
 #print only third file
 sed -n '3,6p' table.txt
+#replacing text in file
+sed 's/version/story/g' myfile.txt
 
 # g/re/p which means “globally search for a regular expression and print all lines containing it”.
 
 $ls -l | grep "Aug"
 
+free -m
 cat /proc/cpuinfo  	#CPU info
 cat /proc/meminfo  	#memory info
 cat -h  		# display free and used memory
@@ -296,8 +332,12 @@ du -ah		# Display disk usage for all files and directories inhuman readable form
 
 ssh -p port user@host  # Connect to ​host​ using ​port
 
+#grep command Grep stands for ‘global regular expression print’. This command is used for matching a regular expression against text in a file.
 grep pattern file		# Search for ​pattern​ in ​file
 grep -r pattern directory	# Search recursively for ​pattern​ in ​directory
+grep "anuj" *.txt    #find files having anuj text
+grep -c "Unix" filename #count a word in a file
+
 locate name			# Find files and directories by name
 find /home/john -name'prefix*'	# Find files in ​/home/john​ that start with "prefix".
 
@@ -319,6 +359,7 @@ hostname -i			# Display the network address of the host name.
 hostname -I			# Display all local ip addresses
 wget http://domain.com/file	# Download ​http://domain.com/file
 netstat -nutlp			# Display listening tcp and udp ports and correspondingprograms
+nslookup google.com 		# gives DNS domain name system ..which is like phonebook of the internet
 
 tar cf archive.tar directory	# Create tar named ​archive.tar​ containingdirectory​.
 tar xf archive.tar		# Extract the contents from ​archive.tar​.
@@ -334,3 +375,45 @@ $@	Same as above, except when quoted.
 $-	Option supplied to shell
 $$	PID of shell
 $!	PID of last started background process (started with &)
+
+#comparing files 
+cmp file1.txt file2.txt
+diff file1.txt file3.txt
+
+#sorting and uniq
+cat file.txt | sort -r | uniq
+
+#to check operating system 
+uname -a
+
+scp # to copy file from one host to another
+
+#Network Bonding as the name implies that it is the process of bonding or joining two or more than two network interfaces to create one interface. I#Nt helps in improving the network throughput, bandwidth, redundancy, load balancing as in case any of the interfaces is down; the other one will continue to work. 
+
+#Cron and Anacron are used to schedule the tasks in cron jobs. Both of these are the daemons that are used to schedule the execution of commands or tasks as per the information provided by the user.
+
+
+#
+fdisk is used to create partition
+
+Service      Port
+SMTP          25
+FTP             20 for data transfer and 21 for Connection established
+
+DNS            53
+DHCP         67/UDP(for DHCP server, 68/UDPfor DHCP client
+SSH            22
+
+
+#Linux machine can be made as a router so that multiple devices can share a single internet connection. For this, we have to use a feature called “IP Masquerade.” This functionality will help to connect multiple computers to connect to the Linux machine as well as internet. This functionality will also allow those internal computers to connect who do not have IP addresses.
+
+
+
+find /home -name *.jpg
+find -name abc.txt   # in current directory
+
+${string:position:length}
+${string:position}
+${#string}
+${string/pattern/replacement}
+${string//pattern/replacement}
