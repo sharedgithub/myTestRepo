@@ -1,30 +1,34 @@
 package Gener;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class temp {
-	void hello() {}
+	String value;
+	public temp(String value) {
+		this.value=value;
+	}
 
 	public static void main(String[] args) {
 	
-		zoeo<temp> t=new zoeo<>();
-		t.doit(new tempc2());
+		zoeo<temp> t=new zoeo<>(new temp("hello"));
+		zoeo<temp> t=new zoeo<>(new temp("pello"));
+		
 		
 	}
 }
 
 
-class tempc1 extends temp{
-	
-	void hello() {System.out.println("heelo c1");}
-}
-
-class tempc2 extends temp{
-	
-	void hello() {System.out.println("heelo c2");}
-}
 
 class zoeo<T>{
-	T t;
+	List<T> t=new ArrayList<>();
+	static int count;
+	zoeo(T t) {
+		 this.t.add(t);
+		 count++;
+	}
 	
-	void doit(T t) {
+	List<T> getList() {
+		return t;
 	}
 }

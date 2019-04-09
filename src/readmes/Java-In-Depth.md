@@ -197,7 +197,7 @@ Parsing string'
 int a=Integer.parseInt("234");  // parseXXX method return primitive of the type xxx
 int a=Integer.valueOf("234");  //valueOf method return object of type of the wrapper class
 
-Object.hashcode(); will provide memory address in hashcode
+Object.hashcode(); will provide memory address in hashcode. To manage objects java simply assign 32 bit int value(hashcode) to objects
 
 
 effective java says minimize inhertance

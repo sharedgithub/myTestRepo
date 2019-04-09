@@ -12,9 +12,6 @@ public class Exceptions {
 		
 		//but
 		try {
-			FileReader b=new FileReader(new File(""));
-		}catch(FileNotFoundException e) {
-		}finally {
 			System.out.println("husalkd");
 		}
 		
