@@ -2,6 +2,9 @@
 
 basic component of linux os: kernel, system libraries, system utilities
 
+System Library: Most of the functionalities of the operating system are implemented by System Libraries. These act as a special function using which application programs accesses Kernel’s features.
+System Utility: These programs are responsible for performing specialized, individual level tasks.
+
 Linux kernel and application programs can be installed on any kind of hardware platform and thus is considered as portable.
     It is an open source operating system where programmers get the advantage of designing their own custom OS
     Software and the server licensing required to install Linux is completely free and can be installed on many computers as required
@@ -276,9 +279,12 @@ do
 done
 
 #functions
-function addition() {
+function addition {
  local VAR=$1
  local VAR2=$2
+}
+
+addition(){
 }
 
 addition 1 2
