@@ -3,3 +3,27 @@ Task
 RaceCondition
 DeadLock
 Practice
+
+
+
+
+
+Concurrent Vs Parallel execution
+Thread Vs Process
+Thread states
+Thread types
+ways to create thread
+
+Dead Lock
+Race condition
+
+Ways to avoid lock and deadlocks ( Mutex mutual exclusion)
+Reentrant lock
+Synchronized block 
+Synchronized methods
+Atomic classes and atomic methods
+volatile
+
+Synchronized block vs Synchronized methods
+
+Thread communication (wait(), notify(), notifyAll())
