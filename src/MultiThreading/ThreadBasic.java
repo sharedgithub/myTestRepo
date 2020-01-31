@@ -23,6 +23,7 @@ Multithreading is for resources optimization and better CPU utilization
  
  
  Threads can be created by 1) implementation of  Runnable Interface and 2) extending Thread Class 
+ first is prefered as you can also extend any other class 
  
  java.lang.Thread...it is a process
  
@@ -166,5 +167,28 @@ public class ThreadBasic {
 		// thread can enter unsynchronized methods even when lock is acquired by a
 		// different thread
 	}
+
+}
+
+
+class Tasks extends Thread{
+
+    public static AtomicInteger counter=new AtomicInteger();
+    private static final Object lock=new Object();
+    private static ReentrantLock lock2=new ReentrantLock();
+    public void run(){
+        increment();
+    }
+
+    public synchronized static void increment(){
+        for(int i=0;i<10_00_000;i++){
+            synchronized (lock){
+                lock2.lock();
+                counter.getAndIncrement();
+                lock2.unlock();
+            }
+        }
+    }
+
 
 }
