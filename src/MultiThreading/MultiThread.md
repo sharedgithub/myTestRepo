@@ -20,6 +20,7 @@ Thread join() method to make sure all the threads created by the program is dead
 
 Thread communicate by wait notify and notifyAll 
 Object class wait(), notify() and notifyAll() methods allows threads to communicate about the lock status of a resource. 
+with wait thread goes into blocked state until some other thread calls the notify method on the object to which the first thread was locked
 
 All these method should be inside synchronized method or code to prevent thread interviening
 
@@ -51,4 +52,18 @@ Synchronized block is more preferred way because it doesn’t lock the Object, s
 
 
 The fundamental difference is wait() is from Object and sleep() is static method of Thread . The major difference is that wait() releases the lock while sleep() doesn't releas any lock while waiting
+
+
+
+Deadlock
+
+        Thread thread1 = new Thread() {
+            public void run() { synchronized (lock1) { Threads.sleep(); synchronized (lock2) { }}}
+        };
+
+        Thread thread2 = new Thread() {
+            public void run() { synchronized (lock2) {Threads.sleep(); synchronized (lock1) { }}}
+        };
+
+        thread1.start();thread2.start();
 
