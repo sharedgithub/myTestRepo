@@ -3,14 +3,19 @@ package MultiThreading;
 import java.util.concurrent.TimeUnit;
 
 /*
+
+Concurrency vs Parallel execution
+Concurrency is when programs can be executed in the ovrelapping time ie running simultanously but one at a time
+Parallel is when program can be executed simultaneously at the same time
  
 Multithreading is for resources optimization and better CPU utilization
 
  Thread is single sequential flow of control within a process
  Thread is a light weight process
- 
  Threads are basically for small tasks. Threads can share resources and memory
+ 
  Process are for heavy tasks and do not share memory and resources
+ 
  
  Two type of thread
  Daemon thread ...background thread such as gc
@@ -43,10 +48,12 @@ Multithreading is for resources optimization and better CPU utilization
  Thread scheduler..is responsible for moving thread between different state
 
  Possible state transition
- Blocked->Runnable->Running->Blocked
- Running->Runnable
- 
- New and Dead are start and end state
+
+New
+|
+Runnable=Blocked
+|
+Terminated
 
  Should not rely on Thread Scheduler
  
@@ -57,7 +64,7 @@ Multithreading is for resources optimization and better CPU utilization
 Time Slicing is the process to divide the available CPU time to the available runnable threads. 
 Thread Scheduler is the Operating System service that allocates the CPU time to the available runnable threads.
 
-Thread join() method to make sure all the threads created by the program is dead before finishing the main function...????
+Thread join() method to make sure all the threads created by the program is dead before finishing the thread who is calling the join method
 
 Thread communicate by wait notify and notifyAll 
 Object class wait(), notify() and notifyAll() methods allows threads to communicate about the lock status of a resource. 
