@@ -191,4 +191,16 @@ class Tasks extends Thread{
     }
 
 
+	Deadlock....
+	
+	Thread thread1 = new Thread() {
+            public void run() { synchronized (lock1) { Threads.sleep(); synchronized (lock2) { }}}
+        };
+
+        Thread thread2 = new Thread() {
+            public void run() { synchronized (lock2) {Threads.sleep(); synchronized (lock1) { }}}
+        };
+
+        thread1.start();thread2.start();
+
 }
