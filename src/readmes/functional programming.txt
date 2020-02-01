@@ -33,9 +33,8 @@ andThen(Function after)  First applies its logic then the logic provided by func
 compose(Function before)  First applies before logic and then its own logic
 identity()  Return its own input parameter
 
-
-lamdas can have only one method
-and it can also have default method
-and it can also have to string method
+and it can have many default and static methods
 
 earlier anonymous classes were used as lambdas
+
+
