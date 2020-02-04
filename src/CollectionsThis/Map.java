@@ -41,3 +41,14 @@ public class Map {
 //		}
 	}
 }
+
+
+
+
+/** some new things
+
+.getOrDefault(Key,value)
+.putIfAbsent(key,value)
+.replace(key,existingValue,newValue)
+.remove(key,value)...remove if key & value exist
+.removeIf
