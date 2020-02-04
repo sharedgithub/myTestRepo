@@ -197,3 +197,6 @@ A piece of code is thread-safe if it only manipulates shared data structures in 
  concurrent modification exception occurs when you iterate over the element and try to modify the collections at the same time...
  
 But Iterator implementation in java.util.concurrent packages are fail-safe and we can modify the collection while iterating. Some of these classes are CopyOnWriteArrayList, ConcurrentHashMap, CopyOnWriteArraySet.
+
+    //https://stackify.com/streams-guide-java-8/
+    https://www.geeksforgeeks.org/deque-interface-java-example/
