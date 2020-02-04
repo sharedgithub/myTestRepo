@@ -180,7 +180,8 @@ while(i.hasNext()){
 
 Comparable and Comparator both are interfaces and can be used to sort collection elements
 
-Comparator modifies actual class and comparable does not
+Comparable has to be implemented by the class and then we can only use one algo to sort the objects
+Compartor can also be implemented but we can create different comparator implementation of and pass it to the class and sort them the way we want to.
 	
 we can also use Array.sort() and Collections.sort()
 
