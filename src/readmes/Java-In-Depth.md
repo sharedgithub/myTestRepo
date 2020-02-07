@@ -161,7 +161,8 @@ using stringbuilder it is O(N) with its append method
 
 
 mutator and accessor=> setter and getter
-
+string.replaceAll("[^0-9]", "") replace all char in string
+also read about marker interface
 
 ## constant and final variable ...
 
