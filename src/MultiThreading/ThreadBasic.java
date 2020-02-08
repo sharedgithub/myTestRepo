@@ -76,7 +76,27 @@ sleep and yield method are static because it has to operate on current thread.
 
 Synchronization is the capability to control the access of multiple threads to any shared resource
 
-Synchronizaton and atomic concurrent classes can be used for thread safety...also volatile keyword 	
+Synchronizaton and atomic concurrent classes can be used for thread safety...also volatile keyword 
+when a thread is runnng it does not expect its class variable values to change outside its current thread so it use cache to store variables
+
+class Task extends Thread{
+ public boolean isRunning=true;
+public void run(){
+while(isRunning){
+dosomething
+}
+public void setRunning(boolean vl){
+isRunning=vl;
+}
+
+
+ThreadA.start()
+Task.setRunning(false)// will not stop the run as the thread is using cache to read isRunning value;
+
+
+
+When a method changes a value then thread will still be reading from cache. Now to make sure it is read directly from the memory we use volatile keyword.
+But volatile keyword will still need to be used in synchronized block in multi thread env.
 
 Deadlock is the condition where threads wait on each other to release lock of an object
 
