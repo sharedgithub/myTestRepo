@@ -90,6 +90,36 @@ public void eat(String food){}  // overloading
 ![](http://apprize.info/javascript/oca_2/oca_2.files/image253.jpg)
 
 
+public class Parent {
+    public Parent(){
+        System.out.println("inside parent with no argument");
+    }
+    public Parent(int a){
+        System.out.println("inside parent with argument");
+    }
+}
+
+class Child extends Parent{
+    public Child() {
+        System.out.println("inside child with no argument");
+    }
+
+    public Child(int b) {
+        System.out.println("inside child with argument");
+    }
+    public static void main(String[] args) {
+        Child child = new Child();
+        System.out.println("XXXXXXXXXx");
+        Child child1 = new Child(15);
+	
+	//in both the cases above first parent with no args will be called.
+	If you create a single constructor with args in a parent class then you need to have a no args default constructor in parent else you wont be able to create child object
+    }
+}
+
+
+
+
 ## Constructor rules
 
 Constructor must be of same name as class
