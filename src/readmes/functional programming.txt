@@ -2,6 +2,8 @@
 functions in java are not methods as methods are bound by classes
 JJVM is responsible for interpretting bytecode, security and memory managment
 
+Reflections???
+
 at runtime, instance of jvm is created and in that instance bytecode is loaded 
 jvm also do just in time compilation ...which checks which part of code is executed frequently and then cache that code for faster execution
 
