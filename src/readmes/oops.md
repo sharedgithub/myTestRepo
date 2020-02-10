@@ -12,6 +12,15 @@ Aggregation
 Polymorphism is the ability of an object to take on many forms.
 * compile time polymorphism is method overloading and It is also known as Static binding, Early binding and overloading as well. call to overloaded method is resolved at compile time.
 
+Polymorphism is when a single object can take differ forms
+public interface Vegetarian{}
+public class Animal{}
+public class Deer extends Animal implements Vegetarian{}
+A Deer IS-A Animal
+A Deer IS-A Vegetarian
+A Deer IS-A Deer
+A Deer IS-A Object
+
 * runtime polymorphism is method overiding as it is at runtime when the compiler decides. Dynamic binding and late binding
 Polymorphism lets us perform a single action in different ways. like eat method of different animals
 Polymorphism allows you to define one interface and have multiple implementations
