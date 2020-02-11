@@ -71,7 +71,7 @@ cat file.txt | head -5 | tail -3 | wc -l > output.txt #piping is for sending dat
 wc -l file.txt #this returns count of lines in file
 cat file.txt | sort -rnk2 | uniq -c #-rnk2 means sort in reverse then specifying that column have numeric data and column 2 should be sorted
 sort -k -t/; file
-cut -f 1 2 
+cut -d ' ' -f 3 this.txt | cut -c 1-4  # split fields in txt file with space then print only third field then show 1 to 4 character
 join file1 file2 # to join the data according to the key field
 
 #File Operations
