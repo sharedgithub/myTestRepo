@@ -15,6 +15,12 @@ Selenium is a suite of tools for automated web testing.  It is composed of:
 * java 8 is required
 * stability and bug fixes
 
+## Selenium 4 feature
+
+* Microsoft edge support
+* Releative locators
+* Tab management 
+
 ### PROS
 
 *Open source: Since it is an OSS, so we don’t have to bear any licensing cost for using it.
