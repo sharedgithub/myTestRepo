@@ -41,5 +41,12 @@ identity()  Return its own input parameter
 and it can have many default and static methods
 
 earlier anonymous classes were used as lambdas
+https://stackify.com/streams-guide-java-8/
 
-
+        Integer[] iarry=new Integer[]{11,2,8,2,5};
+       Arrays.stream(iarry).sorted((x,y)->y.compareTo(x)).forEach(System.out::println);
+        Integer max=Arrays.stream(iarry).reduce((x,y)->x>y?x:y).orElse(null);
+        System.out.println("max " + max);
+       Set<String> kk="aslkdfasdfasdfasdf".chars().mapToObj(x->Character.toString(x)).collect(Collectors.toSet());
+       Map<String,List<String>> ddkk=
+               "aslkdfasdddddddfasdfasdf".chars().mapToObj(x->Character.toString(x)).collect(Collectors.groupingBy(x->x));
