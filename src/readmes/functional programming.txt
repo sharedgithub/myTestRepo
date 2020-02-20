@@ -5,7 +5,10 @@ JJVM is responsible for interpretting bytecode, security and memory managment
 Reflections??? variable shadowing
 
 at runtime, instance of jvm is created and in that instance bytecode is loaded 
-jvm also do just in time compilation ...which checks which part of code is executed frequently and then cache that code for faster execution
+jvm also do just in time compilation ..
+
+JIT is part of JVM which compiles the bytecode to machine code for faster execution. 
+.which checks which part of code is executed frequently and then cache that code for faster execution
 
 In a compiled implementation, the original program is translated into native machine instructions, which are executed directly by the hardware.
 
