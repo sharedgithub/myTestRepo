@@ -112,15 +112,16 @@ or Network Adapters, Lan Adapters,
 can be wired or wireless
 
 ***Hub switch router gateway bridge
-Hub connnects devices in the same network ...physical layer...it just broadcast
-Swith also does the same thing but it sends to a particula system using ARP ( address resolution protocol )
+Hub connnects devices in the same network ...physical layer...it just broadcast the data to all devices
+Swith also does the same thing but it sends to a particulal system using ARP ( address resolution protocol ) unicasting/multicasting
+hub and switch works at physical layer ...l3 switch works in network layer
 router works at network layer connecting networs together
 
 hub and swithc works with frames and router works with packets
 
-bridge is used in bus topology where all systems are connected via a bridge. 
+bridge works in physical layer, bridge is used in bus topology where all systems are connected via a bridge. it is used to divide la
 
-any device which connects two network together*, *which uses diffent protocol,  like router,switch, firewall server or any device that enable data flow in and ou
+Gateway is any device which connects two network together*, *which uses diffent protocol,  like router,switch, firewall server or any device that enable data flow in and ou
 
 , gateway is also called protocol convertor
 
@@ -140,13 +141,10 @@ Star Bus and Ring
 
 
 
-*************Sensors and actuators
-
-
-*****TPM
-
-
 *** NAT
+Consider home network where router have a public IP address and connected device have private IP address
+router maintains a table which private IP address wants to connect to which public ip address ( any server like google or amazon server)
+so the router transalte the router ip address to private ip address
 
 *** VLAN VPN
 logical division of ip address is called subnetting
@@ -166,5 +164,12 @@ access controllist
 
 network topology
 
+
+*****TPM***********
+Truted platform module is a chip on dell gateways used to store the state of the gatewy cryptology
+A fingerprint tool generate a json have PCR(Platform configuration Register) values of the BIOS parameters of the gateway for boot time attestation 
+A different tools generate ima json (Integrity measure architechture) generate SHA for all the files on the gateways for runtime attestation
+
+these two files goes as the gateways security profile for all the gateways and they are matched
 
 
