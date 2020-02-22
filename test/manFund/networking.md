@@ -91,12 +91,12 @@ IPV4 is 32 bit address divided into class A,B, C, D, E
 IP Address   NetworkAddress:HOST Address
 
 
-Class			Range			Subnet Mast
-Class A			0-126			255.0.0.0
-B				128-191			255.255.0.0
-C				192-223			255.255.255.0
-D				224-239				X
-E				240-255				X
+Class			Range			Subnet Mast		Default CIDR(Classless inter domain routing)
+Class A			0-126			255.0.0.0		8
+B			128-191			255.255.0.0		16
+C			192-223			255.255.255.0		24
+D			224-239				X
+E			240-255				X
 
 127.0.0.1 is missing..its a loopback address to check whether nic card is working or not. 
 to check type 127.0.0.1
@@ -114,12 +114,14 @@ can be wired or wireless
 ***Hub switch router gateway bridge
 Hub connnects devices in the same network ...physical layer...it just broadcast the data to all devices
 Swith also does the same thing but it sends to a particulal system using ARP ( address resolution protocol ) unicasting/multicasting
+swtichs are also used to create VLAN to configure ie to break the lan into small virtual lans restricting and allowing communication between lan is configurable
 hub and switch works at physical layer ...l3 switch works in network layer
 router works at network layer connecting networs together
 
 hub and swithc works with frames and router works with packets
 
-bridge works in physical layer, bridge is used in bus topology where all systems are connected via a bridge. it is used to divide la
+bridge works in physical layer, bridge is used in bus topology where all systems are connected via a bridge. it is used to divide lan into different segments, as in bridge the frames are broadcaseted , bridge helps to broadcast only in a particular segement.
+broadcasting also causes traffic congestion
 
 Gateway is any device which connects two network together*, *which uses diffent protocol,  like router,switch, firewall server or any device that enable data flow in and ou
 
@@ -147,18 +149,29 @@ router maintains a table which private IP address wants to connect to which publ
 so the router transalte the router ip address to private ip address
 
 *** VLAN VPN
-logical division of ip address is called subnetting
+logical division of ip address is called subnetting or dividing large network into small netowrk 
 and logical division of ethernet is called vlan
 
 https://www.uhcl.edu/computing/information-security/tips-best-practices/routers
 
-proxies revese proxy
+*****proxies revese proxy
+proxy server stands between netowork and the internet
+	save bandwidth( by caching the data ex windows update)
+	firewall
+	network monitoring
+	Access control: blocking unwanted websites
 
-firefoxy
+******Firewall
+secure wall between private and public network
+Firewall usese below techniques:
+packet filtering: Block public ip address which are not allowed to communicate with the private network
+IP hiding: hides the ip address of private network using NAT or proxy server
+Port blocking : block the ports of gateway or system which are not allowed to communicate with public network
 
-packet filtering
-application firewaal/ proxy firewall
-hybrid provide best security
+types of fire wall
+hardware and software
+hardware firewall protects the entire network and are generally installed on a gateway
+software firewall are installed on a machine
 
 access controllist
 
