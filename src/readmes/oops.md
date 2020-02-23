@@ -83,3 +83,7 @@ FileOutputStream file = new FileOutputStream(filename);
  ObjectOutputStream out = new ObjectOutputStream(file); 
  out.writeObject(person); 
 object1 = (person)in.readObject(); 
+
+Heap memory is used by all the parts of the application whereas stack memory is used only by one thread of execution.
+Whenever an object is created, it’s always stored in the Heap space and stack memory contains the reference to it. Stack memory only contains local primitive variables and reference variables to objects in heap space.
+Memory management in the stack is done in a LIFO manner whereas it’s more complex in Heap memory because it’s used globally.
