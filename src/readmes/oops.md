@@ -46,24 +46,6 @@ There are two form of association
 1) aggregation ie weak association
 2) composition ie strong association
 
-* Aggregation owner ship is involved so object also have HAS-A relation ship. Can exist without owner. Car has a driver.
-
-class Product{
-}
-
-class ListOfProduct{
-	List<Product> abc=new List<>();
-	
-	void add(Product p){
-		abc.add(p)
-	}
-}
-
-class Order{
-Product p1=new Product();
-
-
-}
 
 * composition is nothing but has a relation ship
 with inheritance things are tightly coupled and fragile and the hierarchy can be messy
@@ -87,3 +69,17 @@ object1 = (person)in.readObject();
 Heap memory is used by all the parts of the application whereas stack memory is used only by one thread of execution.
 Whenever an object is created, it’s always stored in the Heap space and stack memory contains the reference to it. Stack memory only contains local primitive variables and reference variables to objects in heap space.
 Memory management in the stack is done in a LIFO manner whereas it’s more complex in Heap memory because it’s used globally.
+
+Composition - I own an object and I am responsible for its lifetime. When Foo dies, so does Bar
+
+public class Foo {
+    private Bar bar = new Bar(); 
+}
+Aggregation - I have an object which I've borrowed from someone else. When Foo dies, Bar may live on.
+
+public class Foo { 
+    private Bar bar; 
+    Foo(Bar bar) { 
+       this.bar = bar; 
+    }
+}
