@@ -188,7 +188,8 @@ http://angiejones.tech/rest-assured-with-cucumber-using-bdd-for-web-services-aut
 		
 		String jsonInString = "{'word' : 'mkyong'}";
 		ABC res2  = new Gson().fromJson(jsonInString, ABC.class);
-		
+		//object to json string
+		Stirng sb=new Gson().toJson(Object)
 		// object to json
 	
 		FileWriter fw=new FileWriter("abc.json");
