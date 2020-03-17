@@ -154,7 +154,15 @@ public class RestClass {
 			.body(matchesJsonSchemaInClasspath("schema-json.json"))
 			.body("data.id", is(4))
 			.body("$.store.book[0].title", arg1)
+			 .body("data.id",hasItems(7,8,9,10,11,12))
+                        .body("data.id[0]",equalTo(7))
+                        .body("data[1].id",equalTo(8))
 			;
+			
+		given().log().all().when().get().then().body();
+		
+		
+		
 	
 		}
 	
@@ -188,10 +196,11 @@ http://angiejones.tech/rest-assured-with-cucumber-using-bdd-for-web-services-aut
 		
 		String jsonInString = "{'word' : 'mkyong'}";
 		ABC res2  = new Gson().fromJson(jsonInString, ABC.class);
+		
 		//object to json string
 		Stirng sb=new Gson().toJson(Object)
-		// object to json
-	
+		
+		// object to json file
 		FileWriter fw=new FileWriter("abc.json");
 		new Gson().toJson(res2,fw);
 		fw.flush();
