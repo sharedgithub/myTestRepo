@@ -1,4 +1,14 @@
 
+Queue<String> alpha =new LinkedList<>();
+Deque<String> alpha =new LinkedList<>();
+
+Queue methods: add poll remove size peek contains
+Deque methods: first and last queue methods
+priorityqueue methods are same as queue  .The elements of the priority queue are ordered according to the natural ordering, or by a Comparator provided at queue construction time,
+poll returns null if the queue is empty but remove throws exception
+
+
+
 class Node{
     Node next;
     int data;
