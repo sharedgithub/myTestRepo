@@ -6,7 +6,7 @@ Queue methods: add poll remove size peek contains
 Deque methods: first and last queue methods
 priorityqueue methods are same as queue  .The elements of the priority queue are ordered according to the natural ordering, or by a Comparator provided at queue construction time,
 poll returns null if the queue is empty but remove throws exception
-
+stak methods: pop push peek isempty search
 
 
 class Node{
@@ -39,3 +39,31 @@ class Quuu{
         if(head==null) head=tail;//head will always contain pointer to the very first node
     }
 }
+
+
+
+
+
+
+
+
+class Stak {
+    //last in first out
+    Node top;
+
+    public void push(int data){
+        Node node=new Node(data);
+        top=new Node(data);
+        if(top==null){
+            return;
+        }else{
+            Node current=top;
+            top.next=current;
+        }
+    }
+
+    public void pop(){
+        if(top!=null) top=top.next;
+    }
+}
+
