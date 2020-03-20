@@ -1,4 +1,13 @@
 
+
+Hashmap are nothing buy key value lookup implemented using arrays
+
+so basically for each key a unique hashcode is generated which is mapped to index of an arrays
+
+two different key can have same hashcode and when we are remapping the hashcode to index ...two hashcode can have the same index ...which is called hashcode collision
+
+
+
 Queue<String> alpha =new LinkedList<>();
 Deque<String> alpha =new LinkedList<>();
 
