@@ -98,9 +98,49 @@ Signature Detection:
 	Comparing signature(detection of code pattern) of virus from a database
 	
 
-		
-		
+Botnets: Network of infected computers
+    Hacker steals your computer power/network/storage using worms to connect your system to botnets.
+    Once added to the network it waits for hackers orders
+    hackers uses them to :
+    	1) deliver spam
+	2) performing ddos
+	3) renting computation power 
+	4) mining bitcoins 
+	5) performing bruetforce attack
+	
+Zero days: a type of vulnerability in the system which no one knows but the hacker
+APT ( advance persistent threats) are well funded group of hackers could be government or individual group
   
+  
+  
+
+internal or external attacker
+internal attacker could be a one:
+	who is going through lot of stress
+	visiting harmful websites
+	installing harmful tools
+	
+CIA triangle
+Confidentiality
+INtegrity
+Avalibility
+
+DOS denial of service compromises the availability of a system
+it requires a lot of bandwidth and easier to block 
+thats y distributes dos ddos attack where botnets are used 
+
+Eavesdroping attack : attacker access encrypted communication
+	Network device tapping
+	DNS or ARP poisining : redirects communication to different system
+	( in dns poising wrong dns information is provided to the user and it redirects to attacker server)
+	ARP poising for local network
+two types: man in the middle and Replay attack
+in man in the middle attacker just capture traffice and in replay attacke he uses the captured token to interact as that user and get other information
+
+password attack
+bruteforce attack to guess encryption key
+
+hacktivist uses hacking for their social and political agendas
   
   
   Assymteric : we have public and private key here
