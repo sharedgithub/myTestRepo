@@ -53,6 +53,54 @@ to manage cluster of esxi hosts , their virtual datacenters, virtual memory, vir
   
   ********************************************************
 	
+  Threats and vulnerability
+
+Malware=Malicious Software
+
+Characteristics
+1) Propogation mechanisms( how to propogate system to system)
+2) Payload( what malicious action to perform)
+
+Types of malwares:
+
+	1) Virus spread system to system with humar help, like inserting usb or click on email attachment
+		Prevention : education for user
+	2) Worms spread system to system without any help
+		Prevention: updating system os and security patches
+	3) Trojan horse: like downloading an application which pretends to be a different appplication and does malicious actions
+	4) Remote access trojans(RAT) : provide access to the hackers (backdoors)
+	
+	
+	5) Backdoor: 
+	6) Logic bomb: executes when a particula state is reached
+	
+	Advance malwares
+	7) rootkits: originally designed for user privilage escalation
+				 it delivers variety of payloads:
+					1) Adware
+					2) backdoors etc
+					
+		User Mode and Kernel mode rootkits
+	8) Polymorphism virus: they avoid signature detection by changing there own code
+	9) Armored virus: Use sophisticated techniques to hide themselves from virus detection system
+	
+	
+Three common type of payload
+	1) Adware: Displays advertisements
+	2) Spyware: Gather information
+			Keyloggin
+			Monitoring web browsing
+			Search hard drive or cloud storage
+	3) Ransomeware: block access to files by encrypt the files
+	
+Signature Detection:
+
+	Comparing signature(detection of code pattern) of virus from a database
+	
+
+		
+		
+  
   
   
   Assymteric : we have public and private key here
