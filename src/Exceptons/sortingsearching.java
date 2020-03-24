@@ -16,8 +16,36 @@ public class Sorting {
     }
 
     static void quickSort(int[] arr){
-
+        quickSort(arr,0,arr.length-1);
     }
+
+    static void quickSort(int[] arr, int li,int ri){
+        if(li>=ri){
+            return;
+        }
+
+        int pivot=arr[(li+ri)/2];
+        int index=partition(arr,li,ri,pivot);
+        quickSort(arr,li,index-1);
+        quickSort(arr,index,ri);
+    }
+
+    static int partition(int[] arr,int li,int ri,int pivot){
+        while(li<=ri) {
+            while (arr[li] < pivot) li++;
+            while (arr[ri] > pivot) ri--;
+            if (li <= ri) {
+                int temp = arr[ri];
+                arr[ri] = arr[li];
+                arr[li] = temp;
+                li++;
+                ri--;
+            }
+        }
+        return li;
+    }
+
+
 
     static void mergeSort(int[] arr){
 
