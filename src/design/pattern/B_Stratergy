@@ -1,0 +1,88 @@
+package main.designPatterns;
+
+
+
+
+
+public class B_Stratergy {
+    //lets take example of Duck interface it will have
+    //fly and quack method
+    //over time you mave want to have differnet type os ducks implmenting this duck interface but the methods in the
+    // interface may not apply to all the ducks
+
+    //some ducks who cannot fly may have to implement fly method without any code in it
+    //some who cannot speak will have to unnecessarily implement quack method
+
+
+    //thats why composition is prefered over interface because sometime inheritance can induce complexity in the code
+    //also there is a concept of encapsulation of what varies
+
+
+
+    // that is the reason we take behaviour out encapsulate them
+
+
+
+    public static void main(String[] args) {
+        CityDuck duck =new CityDuck();
+        duck.quack(); duck.fly();
+    }
+}
+
+abstract class Duck{//abstract class
+    public QuackBehaviour quackBehaviour;
+    public FlyBehaviour flyBehaviour;
+    public abstract void display(); //some ducks may not need this
+    public void quack() { //some duck may not need this
+        quackBehaviour.quack();
+    }
+    public void fly() {//common to all duck
+        flyBehaviour.fly();
+    }
+
+    public void setFlyBehaviour(FlyBehaviour flyBehaviour) {
+        this.flyBehaviour = flyBehaviour;
+    }
+
+    public void setQuackBehaviour(QuackBehaviour quackBehaviour){
+        this.quackBehaviour=quackBehaviour;
+    }
+}
+
+interface QuackBehaviour{//quack behaviour interface
+    public void quack();
+}
+
+        class NoQuack implements QuackBehaviour{ //concrete behavour
+            public void quack(){};
+        }
+
+        class LoudQUack implements QuackBehaviour{
+            public void quack(){};
+        }
+
+interface FlyBehaviour { //fly behaviour interface
+    public void fly();
+}
+
+    class Nofly implements FlyBehaviour { //concrete behaviour
+        public void fly(){
+            System.out.println("No fly");
+        }
+    }
+
+    class FlighHigh implements FlyBehaviour {
+        public void fly(){
+            System.out.println("FlighHigh");
+        }
+    }
+
+class CityDuck extends Duck{ //different duck extending abstract duck
+    public CityDuck(){ //initializing behaviour of individual duck
+        quackBehaviour=new LoudQUack();
+        flyBehaviour=new FlighHigh();
+    }
+    public void display(){
+
+    }
+}
