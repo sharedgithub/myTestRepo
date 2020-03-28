@@ -103,6 +103,7 @@ public class TestDir {
 	        int length;
 	        while ((length = in.read(buf)) > 0) {
 	            out.write(buf, 0, length);
+			System.out.println(new String(buf));
 	        }
 	    }
 	}
