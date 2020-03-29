@@ -175,6 +175,20 @@ Very strict code reviews
 ##accompolished and prooud of## challenges in you previous project 
 
 
+##handeled stress/pressure  ## dificuutl situation ## challenge
+I like to organize my work
+keeping a priority list with param importance, urgent, time required
+Given a task to test android and ios mobile app as soon as i joined and develop team was in US
+	procuring the mobile app , using the xcode on ios building project(test different screen and os version
+	android simulator testing the app, running test on real application
+	procuring the bluetooth enabled gateway, instaling the right os, right services, configuration to make that os bluetooth enabled
+	and finally tesing mobile app and doing diffent kind of tesiting, automation testing
+	plan: identifying the devices, mobile and gateway and laptop procuring them immediately
+	      identified screens and os using boundry value analysis
+	      skipping automation R&D was invloded and framework was not ready for appium
+	      starting test immediately with simulators to report bug early
+	       later I continued testing on real devices
+	       identified what kind of test we will be carrying out and what not
 
 Questions for me
 	This requirement is for a project specific or very generic 
