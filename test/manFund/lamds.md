@@ -19,26 +19,24 @@ sincerity
 
 #### Three defects 
 
-1) DOS attack TPM memory leak
-2) Protocol uploading failing when user unenrols and enrolls the decice
-3) zcs has nodes and loadbalance and it was redirecting the request to first node only. so if it has three nodes the workflow would work only for the first time
-
+1) DOS attack TPM memory leak (memory leak can occur in java due to static variable , file connection not closed in finalize()
+2) Protocol uploading failing above 10K when user unenrols and enrolls the decice ..it was uploading one less protocol ...due to one parameter update...flaw in programming logic
+3) zcs has nodes and loadbalance and it was redirecting the request to first node only. so if it has three nodes the workflow would work only for the first time. This occured when I tried to attempt 
+4) bluetoth mobile app was downloading the agent and sending it to the gateways but when we connect mobile app to different cloud app it sends the same agent for downloading
 
 ### Quality of leader
-Effective Communication skills
-Strong Organisation Skills
-Complete confidence in his or her team
-Respect other team members
-Honest and open to all the team members
-Always in Integrity
+Two skills which are most important
+Effective Communication skills 
+	Communicate clear instructions with the team members 
+	Listen to the queries and feedback from the team members
+	Efeectively report the status to everyone
+	encourage comm
+Strong Organisation Skills 
+	The team leader must get the task done by the available resources and available time.
+	Should be able to manage his work and also make sure team is not getting blocked
 
-Some of the roles of a team leader are:-
 
-The team leader must get the task done by the available resources.
-Conduct ongoing training for the team members
-Develop a strategy for completing the projects within the deadlines
-Communicate clear instructions with the team members
-Listen to the queries and feedback from the team members
+
 
 ###Roles and responsibilities
 Being part of the feature estimation meeting with all the stakeholders
@@ -67,6 +65,7 @@ Team member with low motivation to work: mitigate by talking to them , see what 
 			some of them going through a difficult phase of life
 			some might be in a project for too long and they want to do something else
 			see if they are not able to work due to lack of specific skill or confidence
+Meeting other expectations of manager : Like helping other team or doing some other work which managers delegates. sometimes manager delegates their work to others
 			
 ###chanlenges as individual
 iot is full of challenge working as Individual contributor is challenge lots of delta you have to go through lots of documentation to understand the underlying functionality and to meet the deadlines at the same time. so many kind of testing required to signoff that functionality so its important to decide what kind of testing is in scope and which all functionality need to be tested
@@ -83,12 +82,13 @@ Each team had there own QA to  begin with but as a lead I was not able to utiliz
 Multitasking for QA by having knowledge sharing sessions
 
 
-##Failure as lead 
+##Failure as lead # most challenging project roel
 
 I was given role of a lead very early in my carrier. I had less than two years of experience. I had no idea what leading a team was all about
 I was lacking knowledge about how when and what to communicate with my senior management
 My manager was not happy about my performance 
 I made mistakes like not asking my manager about her expectations from me
+I was saying yes to all the things given to me
 I was finding it hard to manage both my work and the team together because of that I had to work on weekdays
 I was very lenient about the deadlines which i used to give to the team because of which 
 
@@ -145,9 +145,14 @@ I find it very difficult to get up early in the morning or attend any meatings a
 
 
 ##strong
-My interest in the work I do. I study about new tools and technology in my free time like to understand new technologies and how it can help to 
-I am a teamplayer. My focus is always to make sure the whole team is moving forward wether its dev team or qa team. Lot of times we get adhoc request from dev to test some piece of work and If I see that as a blocker to something I would do anything in my capacity to unblock that person first and then do my work
-Over the years I have worked in different projects tools and technologies which has made me highly adaptible to any kind of work given to me. 
+
+My interest in the work I do. I study about new tools and technology in my free time like to understand new technologies and incorporate in my current work to help me provide effective solutions
+
+I am a teamplayer. My focus is always to make sure the whole team is moving forward. Lot of times it happens that someone would be dependent on you for a peice of work and if i find it as a blocker for that persion I would do anything in my capacity to unblock that person first and then do my work
+
+Over the years I have worked in different projects,work envrionment, tools and technologies which has made me highly adaptible to any kind of work given to me. Wether its IC role or a team lead role I think i can adapt
+
+For ex my last transition from windows to linux, from testing clearly written functionalities to an envrionment where everything is unknown was difficult at first but then i got used to that envionment. I found drawing boundries to the testing was really important 
 
 
 ##things I am good at
@@ -158,7 +163,16 @@ technical knownledge
 
 all kind of outdoor sport
 
+## coworker say
+I am creative persion
 
+stick to the deadline . Always plan to finish the task before deadline
+supportive a team player
+## 
+Need to relax a little takes work very seriously only when in office
+Very strict code reviews
+
+##accompolished and prooud of## challenges in you previous project 
 
 
 
