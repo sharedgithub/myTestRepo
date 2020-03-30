@@ -1,4 +1,20 @@
+docker image pull redist
+docker image is collection of layers and config file
 
+docker image inspect: to inspect the config of the image
+
+images resides in registery
+
+docker pull registry/repo/version
+docker pull docker.io/redist/latest or docker pull redist it will assume remaining
+docker.io = docker hub
+
+docker file is created to make the image
+
+first there is code
+second a docker file
+which creates each layers of a docker image
+and all the layers 
 
 
 
@@ -61,21 +77,20 @@ Layers - A Docker image is built up from a series of layers. Each layer represen
 Dockerfile - A text file that contains all the commands, in order, needed to build a given image. The Dockerfile reference page lists the various commands and format details for Dockerfiles.
 Volumes - A special Docker container layer that allows data to persist and be shared separately from the container itself. Think of volumes as a way to abstract and manage your persistent data separately from the application itself.
 
-useful linux commands 
 
-sudo -i // root
-cd ..
-cd /user/bin
 
 docker run -u root -p 8080:8080 -p 50000:50000 -v jenkins-data:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock jenkinsci/blueocean
 http://13.126.123.232:8080/
 docker run -u root -p 8080:8080 jenkinsci/blueocean jenkinsci/blueocean
-bossraths
-#buska@123
+
 docker container id: 615e7892d1f7
 
 docker exec -it <container name> /bin/bash
 
 /var/jenkins_home/secrets/initialAdminPassword  you can found jenkins key here
+
+
+docker network ls
+docker netowrk inspect
 
 
