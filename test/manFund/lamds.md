@@ -159,6 +159,7 @@ For ex my last transition from windows to linux, from testing clearly written fu
 technical knownledge
 
 
+
 ## things I am bad at
 
 all kind of outdoor sport
