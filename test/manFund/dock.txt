@@ -18,7 +18,7 @@ and all the layers
 
 
 
-docker container run hello-world
+
 
 Docker registery is nothing but docker store
 docker client is the application 
@@ -40,13 +40,23 @@ Containers - Running instances of Docker images — containers run the actual ap
 The VM is a hardware abstraction: it takes physical CPUs and RAM from a host, and divides and shares it across several smaller virtual machines. There is an OS and application running inside the VM, but the virtualization software usually has no real knowledge of that.
 A container is an application abstraction: the focus is really on the OS and the application, and not so much the hardware abstraction. Many customers actually use both VMs and containers today in their environments and, in fact, may run containers inside of VMs
 
-docker image ls
-docker image pull imagename
-docker container run imagename somecommand  // it will open image in container executes command inside the container and exit"
-docker container ls -a // list all the container you ran
+for listing containers
+	docker ps -a
+	docker container ls -a   // -a for running instance
+for listing images 
+	docker image ls
 
+Removing
+docker rm <container>
+docker rmi <image>
+
+
+docker image pull imagename
+docker container run hello-world
+docker container run imagename somecommand  // it will open image in container executes command inside the container and exit"
 docker container exec <container ID> ls  executes command in the container isntance
 docker container start <container ID>  running a specific container instance
+docker container stop <container ID>
 
 docker container commit CONTAINER_ID
 docker image pull alpine
@@ -66,12 +76,7 @@ RUN apt-get update \
 	&& apt-get clean															\\ delete temp files
 docker build . -t <tag_name>
 
-docker rm <container>
-docker rmi <image>
 
-docker ps
-docker container ls -a   // -a for running instance
-docker image ls -a
 
 Layers - A Docker image is built up from a series of layers. Each layer represents an instruction in the image’s Dockerfile. Each layer except the last one is read-only.
 Dockerfile - A text file that contains all the commands, in order, needed to build a given image. The Dockerfile reference page lists the various commands and format details for Dockerfiles.
