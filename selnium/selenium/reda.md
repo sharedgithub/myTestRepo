@@ -68,6 +68,8 @@ for untrusted connection error:
 		profile.setAcceptUntrustedCertificates(true); 
 
 		profile.setAssumeUntrustedCertificateIssuer(false);
+		
+in chrome it can be done using chrome options or desired capabilities
 
 
 ### Types of webdriver api
