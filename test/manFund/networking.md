@@ -22,10 +22,10 @@ Physical Layer is first layer of OSI model. Because no physical layer no network
 1) Application Layer
 	Is used by network applicaiton like chrome firefox outlook
    Only layer where user interacts with the data
-   SMTP , HTTP, POP3, IMAP, DHCP, DNS, TELNET, FTP
+   SMTP 25 , HTTP, POP3, IMAP, DHCP, DNS, TELNET, FTP
    
    80 (HTTP), 443 (HTTPS) or 8080 (HTTP Alternate).
-   FTP 25, SSH(Secure shell protocol) 22 and TELNET 23  both telnet and ssh is used to connect remote machine but ssh is secure and encrypted
+   FTP 21, SSH(Secure shell protocol) 22 and TELNET 23  both telnet and ssh is used to connect remote machine but ssh is secure and encrypted
    DHCP Server 67
 	DHCP Client 68
 	DNS 53
@@ -33,7 +33,7 @@ Physical Layer is first layer of OSI model. Because no physical layer no network
 	source.vmware.com	source is hostname (name of the machine) vmware.com is domain name
 	.com is top level domain, vmware is second level domain 
 
-when you hit browser with fqdn is resolved by dns server then a socket is opened on the client side to communicate
+when you hit browser with fqdn is resolved by dns server then a socket is opened on the client side to communicate(browser tries to resolve the query from its cache then if not found it sends the query to local dns server then to others and then to root servers(top level)
 
 HTTPS stands for Hyper Text Transfer Protocol Secure. It is highly advanced and secure version of HTTP. It uses the port no. 443 for Data Communication. It allows the secure transactions by encrypting the entire communication with SSL. It is a combination of SSL/TLS protocol and HTTP. It provides encrypted and secure identification of a network server.
 	
