@@ -1,0 +1,70 @@
+package datalo;
+/**
+Hashmap are nothing buy key value lookup implemented using arrays
+
+so basically for each key a unique hashcode is generated which is mapped to index of an arrays
+
+two different key can have same hashcode and when we are remapping the hashcode to index ...two hashcode can have the same index ...which is called hashcode collision
+
+
+
+Queue<String> alpha =new LinkedList<>();
+Deque<String> alpha =new LinkedList<>();
+
+Queue methods: add poll remove size peek contains
+Deque methods: first and last queue methods
+priorityqueue methods are same as queue  .The elements of the priority queue are ordered according to the natural ordering, or by a Comparator provided at queue construction time,
+poll returns null if the queue is empty but remove throws exception
+stak methods: pop push peek isempty search
+
+**/
+class Quuu{
+    //add to tail remove from head
+    Node head;
+    Node tail;
+    public int remove(){
+        int data= head.data;
+        head=head.next;
+        if(head==null){
+            tail=null;
+        }
+        return data;
+    }
+
+    public void add(int data){
+        Node node=new Node(data);
+        if(tail!=null){
+            tail.next=node; //adding to tail.next
+        }
+        tail=node;  //moving tail pointer to the node
+        if(head==null) head=tail;//head will always contain pointer to the very first node
+    }
+}
+
+
+
+
+
+
+
+
+class Stak {
+    //last in first out
+    Node top;
+
+    public void push(int data){
+        Node node=new Node(data);
+        top=new Node(data);
+        if(top==null){
+            return;
+        }else{
+            Node current=top;
+            top.next=current;
+        }
+    }
+
+    public void pop(){
+        if(top!=null) top=top.next;
+    }
+}
+

@@ -12,7 +12,7 @@
 	</parent>
 
 	<build>
-		<sourceDirectory>src</sourceDirectory>
+		<sourceDirectory>corej</sourceDirectory>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
