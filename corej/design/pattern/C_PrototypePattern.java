@@ -1,6 +1,6 @@
 package main.designPatterns;
 
-public class C_PrototypePatern {
+class C_PrototypePatern {
 
     public static void main(String[] args) {
         MachineImage linux=new MachineImage("Linux","x86");

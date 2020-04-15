@@ -3,7 +3,7 @@ package main.designPatterns;
 import java.util.ArrayList;
 import java.util.List;
 
-public class B_Observer {
+class B_Observer {
 
     //it is usefull in one to many object mapping where depending on change a subject object has to notified all its
     // observers so that necessary changes can be made

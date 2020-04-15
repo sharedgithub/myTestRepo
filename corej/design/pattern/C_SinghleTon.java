@@ -1,6 +1,6 @@
 package main.designPatterns;
 
-public class C_Singleton {
+class C_Singleton {
 }
 
 

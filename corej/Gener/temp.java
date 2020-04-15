@@ -12,7 +12,7 @@ public class temp {
 	public static void main(String[] args) {
 	
 		zoeo<temp> t=new zoeo<>(new temp("hello"));
-		zoeo<temp> t=new zoeo<>(new temp("pello"));
+//		zoeo<temp> t=new zoeo<>(new temp("pello"));
 		
 		
 	}

@@ -4,8 +4,7 @@ package Gener;
 import java.util.ArrayList;
 import java.util.List;
 
-import Zoo.Animala;
-import Zoo.Dog;
+
 
 public class TestGener {
 

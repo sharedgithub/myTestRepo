@@ -1,6 +1,6 @@
 package main.designPatterns;
 
-public class C_Factory {
+class C_Factory {
 }
 
 

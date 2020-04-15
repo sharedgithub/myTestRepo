@@ -52,3 +52,4 @@ public class Map {
 .replace(key,existingValue,newValue)
 .remove(key,value)...remove if key & value exist
 .removeIf
+**/

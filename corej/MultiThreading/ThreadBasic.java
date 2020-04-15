@@ -1,6 +1,8 @@
 package MultiThreading;
 
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.locks.ReentrantLock;
 
 /*
 
@@ -210,17 +212,17 @@ class Tasks extends Thread{
         }
     }
 
-
-	Deadlock....
-	
-	Thread thread1 = new Thread() {
-            public void run() { synchronized (lock1) { Threads.sleep(); synchronized (lock2) { }}}
-        };
-
-        Thread thread2 = new Thread() {
-            public void run() { synchronized (lock2) {Threads.sleep(); synchronized (lock1) { }}}
-        };
-
-        thread1.start();thread2.start();
+//
+//	Deadlock....
+//
+//	Thread thread1 = new Thread() {
+//            public void run() { synchronized (lock1) { Threads.sleep(); synchronized (lock2) { }}}
+//        };
+//
+//        Thread thread2 = new Thread() {
+//            public void run() { synchronized (lock2) {Threads.sleep(); synchronized (lock1) { }}}
+//        };
+//
+//        thread1.start();thread2.start();
 
 }

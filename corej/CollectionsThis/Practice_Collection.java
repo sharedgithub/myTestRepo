@@ -24,8 +24,7 @@ public class Practice_Collection {
 		List abc=new LinkedList();
 		abc.addAll(Arrays.asList(Integer.valueOf(34),
 			"234",
-			Integer.valueOf(35),
-			new Matter()
+			Integer.valueOf(35)
 		));
 	
 		abc.clear();

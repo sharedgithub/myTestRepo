@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-public class B_Iterator {
+class B_Iterator {
     //provoid common ways to iterate over different objects
     public static void main(String[] args) {
         Movie90DB db1=new Movie90DB();

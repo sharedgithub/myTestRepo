@@ -6,13 +6,15 @@ import java.io.FileReader;
 
 public class Exceptions {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 		
 		int a=3/0; //notice here the compiler does not throw any error because it is ArithmenticException is uncheked runtime exception
 		
 		//but
 		try {
 			System.out.println("husalkd");
+		}finally {
+
 		}
 		
 		FileReader b=new FileReader(new File(""));
